@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #DBCF93;
+        }
+
+        /* main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        /* bg img-main */
+        .main {
+            height: 90%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            background-color: black;
+
+        }
+
+        .top {
+            height: 92%;
+            width: 100%;
+            background-image: url(https://pandansocial.com/wp-content/uploads/2021/09/Is-The-Grocery-Store-Industry-Ripe-for-Digital-Innovation_.jpg);
+            opacity: 50%;
+        }
+
+        .text-box {
+            height: 30%;
+            width: 30%;
+            background-color: rgb(0, 0, 0);
+            margin-left: 35%;
+            opacity: 60%;
+            color: white;
+
+        }
+
+        /* main-header */
+        .headers {
+            height: 8%;
+            width: 100%;
+            background-color: #FF5D00;
+            display: flex;
+            flex-direction: row;
+
+
+
+        }
+
+        /* header-box1 */
+        .header-one {
+            background-color: #FF5D00;
+            height: 100%;
+            width: 60%;
+            padding-left: 5%;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+
+        /* header-box-2 */
+        .header-two {
+            background-color: #FF5D00;
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: first baseline;
+            gap: 70px;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .footer {
+            height: 15%;
+            width: 96%;
+            background-color: #AAC466;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 3.5%;
+            gap: 4.50%;
+
+        }
+
+        .cyrcle {
+            height: 90%;
+            width: 8%;
+            border-radius: 100%;
+
+        }
+
+        .one {
+            background-color: #D86F33;
+        }
+
+        .two {
+            background-color: antiquewhite;
+        }
+
+        .three {
+            background-color: yellow;
+        }
+
+        .four {
+            background-color: rgb(170, 0, 255);
+        }
+
+        .five {
+            background-color: #d83333;
+        }
+
+        .six {
+            background-color: rgb(250, 215, 231);
+        }
+
+        .seven {
+            background-color: rgb(255, 132, 0);
+        }
+
+        .eight {
+            background-color: violet;
+        }
+
+        .img-variety {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        /* first footer */
+        .second-header {
+            height: 34%;
+            width: 100%;
+            background-color: #666bc4;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* second-top */
+        .second-top {
+            height: 18%;
+            width: 100%;
+            background-color: #DBCF93;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2%;
+        }
+
+        .second-top-child {
+            height: 50%;
+            width: 80%;
+            background-color: #FF5D00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30PX;
+            color: white;
+            font-family: sans-serif;
+
+        }
+
+        /* second-main */
+        .second-main {
+            height: 80%;
+            width: 100%;
+            background-color: #DBCF93;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .second-main-child-one {
+            height: 95%;
+            width: 17%;
+            background-color: sandybrown;
+            display: flex;
+            flex-direction: row;
+            margin-top: 1%;
+
+        }
+
+        .second-main-child-one-one {
+            height: 100%;
+            width: 30%;
+            background-color: #d49b7b;
+        }
+
+        .second-main-child-one-two {
+            height: 100%;
+            width: 80%;
+            background-color: #d49b7b;
+        }
+
+        /* product card-one */
+        .second-main-child-two {
+            height: 90%;
+            width: 15%;
+            background-color: #DBCF93;
+            margin-top: 2.30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        /* child-two ka child */
+        .second-main-child-two-one {
+            height: 45%;
+            width: 90%;
+            background-color: rgb(255, 196, 255);
+            border-radius: 10%;
+        }
+
+        .second-main-child-two-one-one {
+            height: 70%;
+            background-color: rgb(171, 238, 130);
+
+        }
+
+        .second-main-child-two-two {
+            height: 45%;
+            width: 90%;
+            background-color: rgb(255, 255, 198);
+            border-radius: 10%;
+        }
+
+        .second-main-child-two-two-two {
+            height: 70%;
+            background-color: rgb(95, 247, 0);
+
+        }
+
+        /* product card-three */
+        .second-main-child-three {
+            height: 90%;
+            width: 15%;
+            background-color: #DBCF93;
+            margin-top: 2.30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* product card four */
+        .second-main-child-four {
+            height: 90%;
+            width: 15%;
+            background-color: #DBCF93;
+            margin-top: 2.30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* product card five */
+        .second-main-child-five {
+            height: 90%;
+            width: 15%;
+            background-color: #DBCF93;
+            margin-top: 2.30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-img {
+            height: 10%;
+            width: 90%;
+        }
+
+        /* product card second img */
+        .card-img {
+            height: 100%;
+            width: 100%;
+        }
+        .product-name{
+            font-size: 25px;
+            text-align: center;
+        }
+
+        /* third page */
+        .thirdheader {
+            height: 35%;
+            width: 100%;
+            background-color: rgb(114, 49, 49);
+        }
+
+
+        .third-main {
+            height: 40%;
+            width: 95%;
+            background-color: wheat;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            padding-left: 5%;
+        }
+
+        /* third main 5 child */
+        .third-product-card-one {
+            height: 80%;
+            width: 17%;
+            background: linear-gradient(rgb(136, 224, 134), white);
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        /* card one ka child */
+        .third-product-card-one-one {
+            height: 70%;
+            width: 70%;
+            background-color: rgb(197, 255, 249);
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+
+        .third-product-card-two {
+            height: 80%;
+            width: 17%;
+            background: linear-gradient(rgb(126, 208, 225), white);
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        .third-product-card-three {
+            height: 80%;
+            width: 17%;
+            background: linear-gradient(rgb(221, 137, 164), white);
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        .third-product-card-four {
+            height: 80%;
+            width: 17%;
+            background: linear-gradient(rgb(232, 148, 115), white);
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        .third-product-card-five {
+            height: 80%;
+            width: 17%;
+            background: linear-gradient(rgb(109, 109, 215), white);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        /* product card thirdimg */
+        .productcardthirdimg {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+
+
+        }
+
+        /*  third-footer */
+        .thirdfooter {
+            height: 20%;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .left-sidebar {
+            height: 100%;
+            width: 40%;
+            background-color: #b70808;
+        }
+
+        .right-sidebar {
+            height: 100%;
+            width: 60%;
+            background-color: #a120d0;
+        }
+
+
+
+
+        /* fourth page */
+        .fourth-main {
+            height: 80%;
+            width: 100%;
+            background-color: #F3FFD3;
+        }
+
+        /* row one */
+        /* vapers row 1 */
+        .classone {
+            height: 40%;
+            width: 100%;
+            background-color: #F3FFD3;
+            display: flex;
+            flex-direction: row;
+            margin-left: 3%;
+
+        }
+
+        .box-one {
+            height: 100%;
+            width: 25%;
+
+            /* background-color: violet; */
+        }
+
+        .box-two {
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(76, 158, 0); */
+        }
+
+        .box-three {
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(157, 42, 42); */
+        }
+
+        .box-four {
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(42, 88, 157); */
+        }
+
+        /* row two */
+        /* vapers row 2 */
+        .classtwo {
+            height: 40%;
+            width: 100%;
+            background-color: #F3FFD3;
+            display: flex;
+            flex-direction: row;
+            margin-left: 3%;
+
+        }
+
+        .school-one {
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(188, 238, 130); */
+        }
+
+        .school-two {
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(158, 134, 0); */
+        }
+
+        .school-three {
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(42, 157, 113); */
+        }
+
+        .school-four {
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(42, 54, 157); */
+        }
+
+        /* vaper product */
+        .vaperproduct-img {
+            height: 90%;
+            width: 65%;
+            border-radius: 20px;
+
+        }
+
+        i {
+            margin-left: 20%;
+            font-size: 20px;
+            text-shadow: 5px 1px rgb(255, 255, 255);
+        }
+
+        /* informatiomn */
+        .contacttop {
+            height: 30%;
+            width: 100vw;
+            background-color: #DBCF93;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .firstbox {
+            height: 20%;
+            width: 100%;
+            background-color: #DBCF93;
+            padding-top: 1%;
+
+        }
+
+        .secondbox {
+            height: 80%;
+            width: 100%;
+            background-color: #DBCF93;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .secondbox-one {
+            height: 100%;
+            width: 80%;
+            background-color: #067300;
+
+        }
+
+        .information {
+            margin-left: 29%;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+        }
+
+        .secondbox-two {
+            height: 100%;
+            width: 20%;
+            background-color: #067300;
+        }
+
+        .visit-button {
+            background-color: red;
+            font-size: 20px;
+            color: white;
+            margin-top: 20%;
+            margin-left: 15%;
+            height: 35%;
+            width: 60%;
+            border-radius: 10px;
+        }
+
+        b {
+            margin-left: 40%;
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 2px rgb(255, 255, 255);
+            font-size: 30px;
+        }
+
+        /* coustmer-review section */
+
+        .reviewsection {
+            height: 40%;
+            width: 100%;
+            background-color:#DBCF93;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .review-section {
+            height: 60%;
+            width: 100%;
+            background-color: #DBCF93;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .coustmer-review {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            background-color: #DBCF93;
+            flex-direction: row;
+        }
+
+        .sohail{
+            height: 100%;
+            width: 100%;
+            background-color:#DBCF93;
+        }
+
+        .rushikesh{
+            height: 100%;
+            width: 100%;
+            background-color: #DBCF93;
+        }
+
+
+
+        .sameer{
+            height: 100%;
+            width: 100%;
+            background-color:#DBCF93;
+        }
+
+        .raja{
+
+            height: 100%;
+            width: 100%;
+            background-color:#DBCF93;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            margin-left: 39%;
+        }
+
+        pre {
+            color: rgb(0, 0, 0);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin-left: 33%;
+        }
+
+        .coustmericon {
+            height: 35%;
+            width: 15%;
+            margin-left: 40%;
+
+        }
+
+        .names {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .star {
+            text-align: center;
+        }
+
+        /* contact-section */
+        .contact-section {
+            height: 30%;
+            width: 100%;
+            background-color:#DBCF93;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-header {
+            height: 25%;
+            width: 100%;
+            background-color: #919191;
+            color: white;
+        }
+
+        .contact-main {
+            height: 80%;
+            width: 100%;
+            background-color: #919191;
+        }
+        .email {
+            height: 100%;
+            width: 100%;
+            background-color: #919191;
+        }
+
+        .contact {
+            height: 100%;
+            width: 100%;
+            background-color: #919191;
+        }
+
+
+
+        .address {
+            height: 100%;
+            width: 100%;
+            background-color:  #919191;
+        }
+
+        .name {
+
+            height: 100%;
+            width: 100%;
+            background-color: #919191;
+        }
+        .main-container {
+                    height: 98vh;
+                    width: 100vw;
+        
+                }
+        
+                /* header */
+                .header {
+                    height: 15%;
+                    width: 100%;
+                    background-color: rgb(255, 253, 127);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                .header-one {
+                    height: 50%;
+                    width: 80%;
+             
+        
+                }
+        
+                i {
+                    font-size: 25px;
+                    margin-left: 15%;
+                    color: rgb(0, 0, 0);
+                }
+                .img-button{
+                    height: 20%;
+                    width: 20%;
+                    margin-left: 10%;
+                }
+        
+                @media (min-width:300px) and (max-width: 350px) {
+                    .header {
+                        height: 8%;
+                        width: 100%;
+                        background-color: rgb(255, 200, 127);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+        
+                    .header-one {
+                        height: 50%;
+                        width: 60%;
+        
+                    }
+        
+                    i {
+                        font-size: 20px;
+                        margin-left: 30%;
+                        color: rgb(3, 3, 113);
+        
+                    }
+        
+                }
+        
+                /* header finish */
+        
+        
+                /* first row */
+                .row-one {
+                    height: 85%;
+                    width: 100;
+                    background-color: tomato;
+                    display: flex;
+                    flex-direction: row;
+                }
+        
+                /* navigation bar */
+                .left-box {
+                    height: 100%;
+                    width: 20%;
+                    background-color: #4ac55f;
+                    display: flex;
+                    flex-direction: column;
+        
+                }
+        
+                .first-column {
+                    height: 11%;
+                    width: 100%;
+                    background-color: #57ff1f;
+                    display: flex;
+                    flex-direction: row;
+                }
+        
+                .first-one {
+                    height: 100%;
+                    width: 20%;
+                    background-color: rgb(255, 255, 255);
+                }
+        
+                .first-two {
+                    height: 100%;
+                    width: 80%;
+                    background-color: rgb(255, 240, 157);
+                }
+        
+                mark {
+                    background-color: rgb(96, 96, 96);
+                    color: white;
+                    font-size: 25px;
+        
+                }
+        
+                /* nac img */
+                .nav-bar-img {
+                    height: 100%;
+                    width: 100%;
+                }
+        
+                /* nav-text */
+                p {
+                    margin-left: 15px;
+                    color: rgb(0, 0, 0);
+                }
+        
+                /* navigation bar finish */
+                .right-box {
+                    height: 100%;
+                    width: 80%;
+                    background-color: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                }
+        
+                .card-row-one {
+                    height: 48%;
+                    width: 100%;
+                    background-color: #9b982d;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+        
+                
+        
+                /* product card */
+                .card {
+                    height: 90%;
+                    width: 20%;
+                    border-radius: 20px;
+                    margin-top: 1%;
+                    display: flex;
+                    flex-direction: column;
+                    border: 2px solid black;
+                    transition: width 1s, height 1s, transform 1s;
+                  
+                }
+        
+        
+                .card:hover{
+        
+                    height: 285px;
+                    width: 235px;
+        
+        
+                }
+                 
+                    
+                
+        
+                .box {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                .boxx {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                .boxxx {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                .boxxxx {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                .image {
+                    height: 65%;
+                    width: 100%;
+                    background-color: violet;
+                    border-radius: 20PX;
+                }
+        
+                .image-text {
+                    height: 35%;
+                    width: 100%;
+                    background-color: rgb(238, 236, 130);
+                    border-radius: 20PX;
+                }
+        
+                /* row two */
+                .card-row-two {
+                    height: 48%;
+                    width: 100%;
+                    background-color: #717827;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    
+                }
+                
+        
+                .cards {
+                    height: 90%;
+                    width: 20%;
+                    border-radius: 20px;
+                    margin-top: 1%;
+                    transition: width 1s, height 1s, transform 1s;
+                    border: 2px solid black;
+                }
+        
+        
+                .cards:hover{
+        
+                    height: 285px;
+                    width: 235px;
+        
+        
+                }
+        
+        
+                .first {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                .second {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                .third {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                .fourth {
+                    background: linear-gradient(rgb(255, 255, 255), rgb(255, 226, 81));
+                }
+        
+                /* card-img */
+                .card-img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 20PX;
+        
+        
+                }
+        
+                .text {
+                    font-size: 20px;
+                    margin-left: 30%;
+                    color: rgb(0, 0, 115);
+                }
+        
+                .gram {
+                    margin-left: 30%;
+                }
+        
+                .price {
+                    font-size: 20px;
+                    margin-top: 20%;
+                    margin-left: 8%;
+        
+                }
+        
+                button {
+                    margin-left: 30%;
+                    background-color: green;
+                    color: white;
+                    border: none;
+                    width: 6vh;
+                    height: 3vh;
+                    font-size: 18px;
+                    border-radius: 6PX;
+        
+        
+                }
+        
+                @media (min-width:300px) and (max-width:350px) {
+        
+                    /* first row */
+                    .row-one {
+                        height: 85%;
+                        width: 100;
+                        background-color: tomato;
+                        display: flex;
+                        flex-direction: row;
+        
+                    }
+        
+                    /* navigation bar */
+                    .left-box {
+                        height: 100%;
+                        width: 20%;
+                        background-color: #4ac55f;
+                        display: flex;
+                        flex-direction: column;
+                        display: none;
+        
+                    }
+        
+                    .first-column {
+                        height: 11%;
+                        width: 100%;
+                        background-color: #ffec8c;
+                        display: flex;
+                        flex-direction: row;
+                    }
+        
+                    .first-one {
+                        height: 100%;
+                        width: 20%;
+                        background-color: rgb(255, 255, 255);
+                    }
+        
+                    .first-two {
+                        height: 100%;
+                        width: 80%;
+                        background-color: rgb(255, 255, 255);
+                    }
+        
+                    /* nac img */
+                    .nav-bar-img {
+                        height: 100%;
+                        width: 100%;
+                    }
+        
+                    /* nav-text */
+                    p {
+                        margin-left: 15px;
+        
+                    }
+        
+                    /* navigation bar finish */
+                    .right-box {
+                        height: 100%;
+                        width: 100%;
+                        background-color: rgb(255, 253, 149);
+                        display: flex;
+                        flex-direction: column;
+        
+                    }
+        
+                    .card-row-one {
+                        height: 1600px;
+                        width: 100%;
+                        background-color: #ffec8c;
+                        display: flex;
+                        flex-direction: column;
+        
+                    }
+        
+                    /* product card */
+                    .card {
+                        height: 50%;
+                        width: 100%;
+                        margin-top: 1%;
+        
+        
+                    }
+        
+                    .box {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    .boxx {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    .boxxx {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    .boxxxx {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    /* row two */
+                    .card-row-two {
+                        height: 600px;
+                        width: 100%;
+                        background-color: #ffec8c;
+                        display: flex;
+                        flex-direction: column;
+        
+                    }
+        
+                    .cards {
+                        height: 50%;
+                        width: 100%;
+                        margin-top: 1%;
+                    }
+        
+                    .first {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    .second {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    .third {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    .fourth {
+                        background: linear-gradient(rgb(255, 255, 255), rgb(255, 251, 165));
+                    }
+        
+                    /* card-img */
+                    .card-img {
+                        height: 50%;
+                        width: 75%;
+                        margin-left: 10%;
+                        margin-top: 5%;
+                    }
+        
+                    .text {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+        
+                    .price {
+                        font-size: 25px;
+                        margin-top: 2%;
+                        margin-left: 2%;
+        
+                    }
+        
+        
+                    button {
+                        margin-left: 40%;
+                        background-color: green;
+                        color: white;
+                        border: none;
+                        width: 6vh;
+                        height: 3vh;
+                        font-size: 18px;
+        
+        
+                    }
+                }
+                a{
+                    text-decoration: none;
+                }
+    </style>
+</head>
+
+<body>
+    <!-- first-main -->
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- bg main -->
+        <div class="main">
+            <!-- header -->
+            <div class="headers">
+                <div class="header-one">PATHAN KIRANA SHOP</div>
+                <div class="header-two">
+                    <div class="header"> Home</div>
+                    <div class="header"> About</div>
+                    <div class="header"> Product</div>
+                    <div class="header"> Contact</div>
+                </div>
+
+            </div>
+            <div class="top"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="text-box">sohail khan</div>
+            </div>
+            <!-- main-header -->
+        </div>
+        <!-- first footer -->
+        <div class="footer">
+            <div class="cyrcle  one"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/a3669a82-f868-44bb-b7d2-19c6dc6a4cf0-Haldirams.jpg"
+                    alt=""></div>
+            <div class="cyrcle  two"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/37cb9c9b-7724-4cbc-adbc-51ee91ba017e-blob"
+                    alt=""> </div>
+            <div class="cyrcle  three"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/f52e9dee-0865-4847-8beb-853d7b6f8aac-Colgate.jpg"
+                    alt=""></div>
+            <div class="cyrcle  four"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/b89abe51-5964-44ee-a576-40d16275ceaa-Maggie.jpg"
+                    alt=""></div>
+            <div class="cyrcle  five"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/c93b11b1-5b5c-47a4-a2cc-69f388a272e3-Parachute.jpg"
+                    alt=""></div>
+            <div class="cyrcle  six"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/494d3b17-b09f-448b-b491-b0ee6e64407a-Bru.jpg"
+                    alt=""></div>
+            <div class="cyrcle  seven"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/5b6fb9e9-f62f-4909-a58f-567d9fe586f5-Surfexcel.jpg"
+                    alt=""></div>
+            <div class="cyrcle  eight"><img class="img-variety"
+                    src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/4b4c3d68-6aca-49b7-82b8-47fe02c7a678-TataSampann.jpg"
+                    alt=""></div>
+
+        </div>
+
+        <!-- first footer -->
+        <div class="second-header"><img style="width: 100%;"
+                src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/7d26cbfb-6d99-46d8-9406-a5a0c43c5854-pothysnatchiyar.jpeg"
+                alt=""></div>
+        <br>
+        <!-- second-header -->
+      
+            <div class="main-container">
+                <!-- header -->
+                <div class="header"><a href=""><img   class="img-button"  src="https://www.effortmark.co.uk/wp-content/uploads/2019/06/back-button-300x300.png" alt=""></a>
+                    <div class="header-one">
+                        <i>⚝. Oil Variety</i>
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="row-one">
+                    <!-- navigation -->
+                    <div class="left-box">
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://m.media-amazon.com/images/I/61dK3VocRLL._SX679_.jpg" alt=""></div>
+                            <div class="first-two">
+                            <a href="./page-one.html">   <p> <mark>. Oil Variety</mark></p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://www.bbassets.com/media/uploads/p/l/40130470_4-suruchi-masala-goda-classic.jpg"
+                                    alt=""></div>
+                            <div class="first-two">
+                              <a href=".//page-two.html">  <p>. Suruchi Masala</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://i.pinimg.com/736x/89/25/c6/8925c63910efcd09f915764acecc0a56.jpg" alt="">
+                            </div>
+                            <div class="first-two">
+                              <a href="./page-three.html">  <p>. Rice & Wheat</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://www.bbassets.com/media/uploads/p/l/40190823_3-godrej-no1-no1-bathing-soap-lime-aloe-vera.jpg"
+                                    alt=""></div>
+                            <div class="first-two">
+                              <a href="./four.html">  <p>. Soap & ditergent powder</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://thumbs.dreamstime.com/b/lentils-wooden-bowls-above-381813852.jpg" alt=""></div>
+                            <div class="first-two">
+                               <a href="./page-five.html"> <p> . Lentils</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://s7ap1.scene7.com/is/image/itcportalprod/ProductCard_OrginalStyle_Default_Desktop_1360x1360_4x1?fmt=webp-alpha"
+                                    alt=""></div>
+                            <div class="first-two">
+                             <a href="./page-six.html">   <p>Snacks Store</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://growstar.in/wp-content/uploads/2021/07/51kQMEbZxL._SL1000_-min-1.jpg" alt="">
+                            </div>
+                            <div class="first-two">
+                               <a href="./page-seven-.html"> <p>. Coldrink</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://static.vecteezy.com/system/resources/previews/044/570/761/non_2x/assortment-of-colorful-ice-cream-scoops-in-waffle-cones-with-fresh-fruits-on-a-transparent-background-png.png"
+                                    alt=""></div>
+                            <div class="first-two">
+                              <a href="./page-eight.html">  <p>. Icecream</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2024/AUGUST/29/cPjFHIla_2f56dbeeadf340bf9f13577b3b29e35f.jpg"
+                                    alt=""></div>
+                            <div class="first-two">
+                           <a href="./page-nine.html">    <p>. Beauty & Perfum</p></a>
+                            </div>
+                        </div>
+                        <div class="first-column">
+                            <div class="first-one"><img class="nav-bar-img"
+                                    src="https://i.pinimg.com/736x/6c/a8/f0/6ca8f02f56d48f0daf38063da995e763.jpg" alt=""></div>
+                            <div class="first-two">
+                              <a href="./page-ten-.html">  <p>. Other Variety</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="right-box">
+        
+                        <div class="card-row-one">
+                            <div class="card box">
+                                <div class="image"><img class="card-img"
+                                        src="https://m.media-amazon.com/images/I/51GyUUKe-0L._UF1000,1000_QL80_.jpg" alt="">
+                                </div>
+                                <div class="image-text"><span class="text">fortune oil packet </span><br><span
+                                        class="gram"></span><br><br><span class="price">₨.120kg</span><button>
+                                        Call</button></div>
+                            </div>
+                            <div class="card boxx">
+                                <div class="image"><img class="card-img"
+                                        src="https://www.jiomart.com/images/product/original/rvw7rwchcn/spellfry-100-pure-kachi-ghani-mustard-oil-1-l-pack-of-4-pet-bottle-product-images-orvw7rwchcn-p594194043-0-202210011104.png?im=Resize=(1000,1000)"
+                                        alt=""></div>
+                                <div class="image-text"><span class="text">Sarso oil</span><br><span
+                                        class="gram"></span><br><br><span class="price">₨.80kg</span><button>
+                                        Call</button></div>
+                            </div>
+                            <div class="card boxxx">
+                                <div class="image"><img class="card-img"
+                                        src="https://cpimg.tistatic.com/08563288/b/4/5-Ltr-Soyabean-Oil.jpg" alt=""></div>
+                                <div class="image-text"><span class="text">5 litre can</span><br><span
+                                        class="gram"></span><br><br><span class="price">₨.40kg</span><button>
+                                        Call</button></div>
+                            </div>
+                            <div class="card boxxx">
+                                <div class="image"><img class="card-img"
+                                        src="  https://www.quickpantry.in/cdn/shop/products/fortune-soyabean-oil-15-l-quick-pantry.jpg?v=1710538872 "
+                                        alt=""></div>
+                                <div class="image-text"><span class="text">15 litre can</span><br><span
+                                        class="gram"></span><br><br><span class="price">₨.60kg</span><button>
+                                        Call</button></div>
+                            </div>
+        
+                        </div>
+                        <br>
+                        <div class="card-row-two">
+                            <div class=" cards first">
+                                <div class="image"><img class="card-img"
+                                        src="https://m.media-amazon.com/images/I/51emC3x7UnL._UF1000,1000_QL80_.jpg" alt="">
+                                </div>
+                                <div class="image-text"><span class="text">Almond Hair Oil</span><br><span
+                                        class="gram"></span><br><br><span class="price"> ₨.150kg</span><button> Call</button>
+                                </div>
+                            </div>
+                            <div class="cards second">
+                                <div class="image"><img class="card-img"
+                                        src="https://media6.ppl-media.com//tr:h-235,w-235,c-at_max,dpr-2/static/img/product/392547/parachute-advansed-aloe-vera-enriched-coconut-hair-oil-gold-5x-aloe-vera-with-coconut-oil-makes-hair-sooperr-soft-250ml_7_display_1674211336_22527f81.jpg"
+                                        alt=""></div>
+                                <div class="image-text"><span class="text">parashoot hair oil</span><br><span
+                                        class="gram"></span><br><br><span class="price">₨.140kg</span><button> Call</button>
+                                </div>
+                            </div>
+                            <div class="cards third">
+                                <div class="image"><img class="card-img"
+                                        src="https://m.media-amazon.com/images/I/71sctrfIIwL.jpg" alt="">
+                                </div>
+                                <div class="image-text"><span class="text">Kesh king oil</span><br><span
+                                        class="gram"></span><br><br><span class="price">₨.80kg</span><button> Call</button>
+                                </div>
+                            </div>
+                            <div class="cards fourth">
+                                <div class="image"><img class="card-img"
+                                        src="https://m.media-amazon.com/images/I/71X3ryvPdQL._UF1000,1000_QL80_.jpg" alt="">
+                                </div>
+                                <div class="image-text"><span class="text">Kesh king oil</span><br><span
+                                        class="gram"></span><br><br><span class="price">₨.90kg</span><button> Call</button>
+                                </div>
+                            </div>
+        
+        
+                            <!-- child -->
+                        </div>
+        
+                    </div>
+        
+                </div>
+       
+        
+        <!-- third-top -->
+        <div class="thirdheader"><img style="width: 100%;" height="100%"
+                src="https://d1sl07a7h3d3fr.cloudfront.net/admin/store/pothys/banner/Final+5.jpg" alt=""></div>
+
+        <!-- third main -->
+        <div class="third-main">
+
+            <div class="third-product-card-one">
+                <div class="third-product-card-one-one"><img class="productcardthirdimg"
+                        src="https://m.media-amazon.com/images/I/81Sdge3dy7L._UF1000,1000_QL80_.jpg" alt=""> <div class="product-name">Harpic</div></div>
+            </div>
+            <div class="third-product-card-two">
+                <div class="third-product-card-one-one"><img class="productcardthirdimg"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkRr0UyxHGwpyrs83LBEdndq7oGXxbTOxHHg&s"
+                        alt=""> <div class="product-name">Comfort</div></div>
+            </div>
+            <div class="third-product-card-three">
+                <div class="third-product-card-one-one"><img class="productcardthirdimg"
+                        src="https://www.bbassets.com/media/uploads/p/xl/40038386_12-lizol-disinfectant-surface-floor-cleaner-liquid-floral-kills-999-germs.jpg"
+                        alt=""> <div class="product-name">Lizol</div></div>
+            </div>
+            <div class="third-product-card-four">
+                <div class="third-product-card-one-one"><img class="productcardthirdimg"
+                        src="https://m.media-amazon.com/images/I/71brmyh4oEL._UF1000,1000_QL80_.jpg" alt=""> <div class="product-name">Tide washing powder</div></div>
+            </div>
+            <div class="third-product-card-five">
+                <div class="third-product-card-one-one"><img class="productcardthirdimg"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZinVVa0JFCGJ35hTbODhpYlfDkRzFMFIaaA&s"
+                        alt=""> <div class="product-name">Surfexcel powder</div></div>
+            </div>
+        </div>
+        <!-- third footer -->
+       
+
+        <!-- fourth page -->
+        <div class="fourth-main">
+            <br>
+            <div class="classone">
+                <div class="box-one"><img class="vaperproduct-img"
+                        src="https://homeshopgrocery.com/img/Snacks%20Store/Chocolate.jpg" alt=""><br> <i>Dairy Milk</i>
+                </div>
+                <div class="box-two"><img class="vaperproduct-img"
+                        src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/6862198be770f12a7ec0a1fc_Maggi-2-Minute-Noodles-Masala-744gm-12Pcs-Pack_1_550.webp"
+                        alt=""><br><i>Yellow Maggi</i></div>
+                <div class="box-three"><img class="vaperproduct-img"
+                        src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt=""><br><i>Salted Penuts</i></div>
+                <div class="box-four"><img class="vaperproduct-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh0xTi7pUjxGESrNEyjCs5Ov1U-jxmunc9Dw&s"
+                        alt=""><br><i>Lays</i></div>
+            </div>
+            <br><br><br>
+            <div class="classtwo">
+                <div class="school-one"><img class="vaperproduct-img"
+                        src="https://homeshopgrocery.com/img/Snacks%20Store/Dry%20Fruits.jpg" alt=""> <br><i>Dry
+                        Fruits</i></div>
+                <div class="school-two"><img class="vaperproduct-img"
+                        src="https://homeshopgrocery.com/img/Snacks%20Store/Mixture.jpg" alt=""><br><i>Uphas Vaper</i>
+                </div>
+                <div class="school-three"><img class="vaperproduct-img"
+                        src="https://m.media-amazon.com/images/I/81LAefUrb9L._UF1000,1000_QL80_.jpg" alt=""><br><i>Milky
+                        Chocos</i></div>
+                <div class="school-four"><img class="vaperproduct-img"
+                        src="https://5.imimg.com/data5/SELLER/Default/2021/5/CW/XM/AL/34912835/sunfeast-yippee-noodles-500x500.jpg"
+                        alt=""> <br><i>Yippee</i></div>
+            </div>
+        </div>
+        <!-- fifth page -->
+        <!-- information -->
+        <div class="contacttop">
+            <div class="firstbox"><b>ℹ️NFORMATION</b></div>
+            <br>
+            <div class="secondbox">
+                <div class="secondbox-one">
+                    <p class="information"> Visit our home shop foer a
+                        semless,shopping experince.Find everything <br>
+                        you need ,form groceries to home essential ,delivered quickly and <br> conventialy right
+                        doorstep.Quality products .exceptional service. </p>
+                </div>
+                <div class="secondbox-two"><button class="visit-button">VISIT
+                        NOW</button></div>
+            </div>
+        </div>
+        <!-- revew section & contact section -->
+        <div class="reviewsection">
+            <div class="review-section">
+                <h1>Coustmer Review</h1>
+                <pre>  Fantastic Service and fastly Delivery ! Hight <br> quality product make shopping homea breeze . <br>     Highly recommened this home shop ! </pre>
+
+
+                <div class="review-section-one"></div>
+            </div>
+            <div class="coustmer-review">
+                <div class="sohail"> <img class="coustmericon"
+                        src="https://cdn-icons-png.flaticon.com/512/189/189533.png" alt="">
+                    <div class="names">sohail Khan</div>
+                    <div class="star">⭐️⭐️⭐️⭐️⭐️</div>
+                </div>
+                <div class="rushikesh"> <img class="coustmericon"
+                        src="https://cdn-icons-png.flaticon.com/512/189/189533.png" alt="">
+                    <div class="names">Rushikesh</div>
+                    <div class="star">⭐️⭐️⭐️⭐️⭐️</div>
+                </div>
+                <div class="sameer"> <img class="coustmericon"
+                        src="https://cdn-icons-png.flaticon.com/512/189/189533.png" alt="">
+                    <div class="names">Sameer Khan</div>
+                    <div class="star">⭐️⭐️⭐️⭐️⭐️</div>
+                </div>
+                <div class="raja"> <img class="coustmericon" src="https://cdn-icons-png.flaticon.com/512/189/189533.png"
+                        alt="">
+                    <div class="names">Raja Khan</div>
+                    <div class="star">⭐️⭐️⭐️⭐️⭐️</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- contact-section -->
+        <div class="contact-section"><br><br>
+          
+            <div class="contact-header">
+             
+                <div class="names">Contact us</div>
+            </div>
+           
+            <div class="contact-main">
+                <div class="coustmer-review">
+                    <div class="email"> <img class="coustmericon"
+                            src="https://cdn-icons-png.flaticon.com/512/6614/6614958.png" alt="">
+                        <div class="names">lacation</div>
+                        <div class="star">location</div>    
+                    </div>
+                    <div class="contact"> <img class="coustmericon"
+                            src="https://pngimg.com/d/email_PNG11.png" alt="">
+                        <div class="names">Email</div>
+                        <div class="star">pathansohal68@gmail.com</div>
+                    </div>
+                    <div class="address"> <img class="coustmericon"
+                            src="https://www.freeiconspng.com/uploads/contact-icon-20.png" alt="">
+                        <div class="names">contact</div>
+                        <div class="star">9370390348</div>
+                    </div>
+                    <div class="name"> <img class="coustmericon"
+                            src="https://png.pngtree.com/png-vector/20240520/ourmid/pngtree-blue-home-icon-or-button-for-webside-png-image_12500532.png" alt="">
+                        <div class="names">Address</div>
+                        <div class="star">pathankirana store tishti</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contactfooter"></div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.452928543689!2d78.74959492532147!3d21.372063580364564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4fbfc860e6709%3A0xb575998ca1600f7!2sTishti%20bk%2C%20Maharashtra%20441107!5e0!3m2!1sen!2sin!4v1758166788483!5m2!1sen!2sin"
+            width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex layout</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            height: 100%;
+            width: 100%;
+            background-color:rgb(207, 146, 25);
+
+        }
+        .header{
+            height: 10%;
+            width: 100%;
+            background-color: rgb(238, 130, 159);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .one{
+            font-size: 30px;
+            padding-top: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header"> 
+            <a href="./headline.html">
+            <div   class="one">Home</div></a>
+            <a href="./file-two.html">
+            <div class="one">About</div></a>
+            <a style="background-color: brown;" href="./file-three.html">
+            <div class="one">Service</div></a>
+            <a href="./file-four.html">
+            <div class="one">Contact</div></a>
+        </div>
+<p style="font-size: 700%; text-align: center; ">Service</p>
+    </div>
+</body>
+</html>
