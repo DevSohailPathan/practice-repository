@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            height: 30vh;
+            width: 30%;
+            background: rgb(208, 173, 173);
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="display"></h1>
+    <button onclick="calculate()">Click</button>
+
+    <!-- <script>
+        function calculate() {
+            let number = Math.random(0);
+            let num =Math.floor(number * 88 )
+          document.getElementById("display").innerHTML=num;
+        }
+    </script> -->
+    <script>
+        function calculate() {
+            let a = Math.random();
+            let s = Math.floor(a * 4);
+            document.getElementById("display").innerHTML = s;
+        }
+    </script>
+</body>
+
+</html>

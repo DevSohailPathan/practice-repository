@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <label>Weight</label>
+    <br>
+    <input id="input-one" type="number">
+    <br>
+    <label>Hight</label>
+    <br>
+    <input id="input-two" type="number">
+    <br>
+    <button onclick=" bmicalculator()">button</button>
+    <script>
+        function bmicalculator() {
+            let x = document.getElementById("input-one").value;
+            let y = document.getElementById("input-two").value;
+            let z = Number(y) * Number(y);
+            bmi = Number(x) / Number(z);
+
+            document.getElementById("display").innerHTML = bmi
+        }
+    </script>
+</body>
+
+</html>

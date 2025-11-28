@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            height: 60%;
+            width: 35vw;
+            background-color: whitesmoke;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.219);
+        }
+
+        p {
+            height: 80px;
+            width: 80%; display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 30px;
+            justify-content: space-evenly;
+            background-color: rgb(171, 231, 255);
+         
+        }
+
+        label {
+            font-size: 30px;
+        }
+
+        input {
+            width: 80%;
+            height: 30px;
+        }
+
+        button {
+            height: 40px;
+            width: 80%;
+            background-color: rgb(0, 133, 186);
+            border: rgb(111, 80, 34);
+            border-radius: 10px;
+            color: white;
+            font-size: 25px;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="box">
+            <h1>Temperature Checker</h1>
+            <label for="">Enter Temperature (<sup>.</sup>c)</label>
+            <input type="text" id="input" placeholder="Enter ypur age">
+            <button onclick="calculate()">Check Temperature </button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script>
+
+        function calculate() {
+            let temp = document.getElementById("input").value;
+
+            if (temp >= 30) {
+                document.getElementById("result").innerHTML = "Hot"
+            }
+
+            else {
+                document.getElementById("result").innerHTML = "It cool "
+            }
+            document.getElementById("input").value = "  "
+        }
+    </script>
+</body>
+
+</html>       

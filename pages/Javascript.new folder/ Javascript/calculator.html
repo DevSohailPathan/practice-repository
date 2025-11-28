@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 40%;
+            height: 80%;
+            background-color: rgb(205, 205, 205);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            border-left: 5px solid black;
+            border-bottom: 5px solid black;
+        }
+
+        .display-area {
+            width: 80%;
+            height: 20%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 20px;
+            width: 100;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .button-group {
+            width: 80%;
+            height: 50%;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+
+
+        }
+
+        button {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            background-color: gray;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display-area">
+            <p id="display"></p>
+        </div>
+
+        <div class="button-group">
+            <button onclick="clickone ()">1</button>
+            <button onclick="clicktwo()">2</button>
+            <button onclick="clickthree()">3</button>
+            <button style="background-color: rgb(255, 132, 0);" onclick="clickadd()">+</button>
+            <button onclick="clickfour ()">4</button>
+            <button onclick="clickfive()">5</button>
+            <button onclick="clicksix()">6</button>
+            <button style="background-color:rgb(255, 132, 0);" onclick="clicksub()">-</button>
+            <button onclick="clickseven()">7</button>
+            <button onclick="clickeight()">8</button>
+            <button onclick="clicknine()">9</button>
+            <button style="background-color: rgb(255, 132, 0);" onclick="clickmulti()">*</button>
+            <button onclick="clickzero()">0</button>
+            <button onclick="clickdoublezero()">00</button>
+            <button style="background-color: rgb(255, 132, 0);" onclick="clickequal()">=</button>
+            <button style="background-color: rgb(255, 132, 0);" onclick="clickdivision()">÷</button>
+        </div>
+
+    </div>
+</body>
+<script>
+    function clickone() {
+        document.getElementById("display").innerHTML += 1
+    }
+    function clicktwo() {
+        document.getElementById("display").innerHTML += 2
+    }
+    function clickthree() {
+        document.getElementById("display").innerHTML += 3
+    }
+    function clickfour() {
+        document.getElementById("display").innerHTML += 4
+    }
+    function clickfive() {
+        document.getElementById("display").innerHTML += 5
+    }
+    function clicksix() {
+        document.getElementById("display").innerHTML += 6
+    }
+    function clickseven() {
+        document.getElementById("display").innerHTML += 7
+    }
+    function clickeight() {
+        document.getElementById("display").innerHTML += 8
+    }
+    function clicknine() {
+        document.getElementById("display").innerHTML += 9
+    }
+    function clickzero() {
+        document.getElementById("display").innerHTML += 0
+    }
+    // simbol
+    // function clickadd() {
+    //     document.getElementById("display").innerHTML += 
+    // }
+    // function clicksub() {
+    //     document.getElementById("display").innerHTML += 
+    // }
+    // function clickmulti() {
+    //     document.getElementById("display").innerHTML += 
+    // }
+    // function clickdoublezero() {
+    //     document.getElementById("display").innerHTML += 
+    // }
+    // function clickequal() {
+    //     document.getElementById("display").innerHTML += 
+    // }
+    // function clickdivision() {
+    //     document.getElementById("display").innerHTML += 
+    // }
+
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="display"> </p>
+    <input type="text" id="input-one">
+    <input type="text" id="input-two">
+    <button onclick="calculate()">Button</button>
+
+
+    <script>
+
+
+        function calculate() {
+            let num1 = document.getElementById("input-one").value
+            let num2 = document.getElementById("input-two").value
+            let exponent = Number(num1) % Number(num2);
+
+
+            document.getElementById("display").innerHTML = exponent;
+        }
+    </script>
+</body>
+
+</html>

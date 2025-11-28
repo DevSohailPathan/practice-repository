@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2 number datatype</title>
+    <style>
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .main-box{
+            height: 65%;
+            width: 30%;
+            background-color: white;   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.21);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid gainsboro;
+        }
+        h2{
+            color: #1C352D;
+        }
+        .circle{
+            height: 20%;
+            width: 57%;
+            background-color: #ffffff;  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.21);
+            border: 2px solid rgb(177, 177, 177);
+        }
+        p{
+            height: 20%;
+            width: 90%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.21);
+            border: 2px solid gainsboro;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        input{
+            width: 70%;
+            height: 30px;
+        }
+        button{
+            height: 50px;
+            width: 40%;
+            font-size: 24px;
+            background-color: #04ff00;
+            border: none;
+            border-radius: 7px;
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.21);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-box">
+            <h2> Area of Rectangle Calculator</h2>
+        <div class="circle"></div>
+        <label><h2>Hight</h2></label>
+        <input type="number" id="input" placeholder="Enter a  Number ......">
+        <label><h2>Wight</h2></label>
+        <br>
+        <input type="number" id="input-two" placeholder="Enter a Number ......">
+        <br>
+        <button onclick="calculatearea()">Calculate area</button>
+        <p id="output"></p>
+    </div>
+    </div>
+   
+ 
+<script>
+    function calculatearea(){
+        // input
+        let radius1 = document.getElementById("input").value
+        let radius2 = document.getElementById("input-two").value
+        // assign
+      
+        let area = Number (radius1) * Number (radius2)
+        // output
+        document.getElementById("output").innerHTML = "Area of Square is :" + area
+    }
+</script>
+</body>
+</html>

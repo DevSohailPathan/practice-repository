@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance</title>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(173, 241, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-1 {
+            width: 30%;
+            height: 60%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Stack Sans Text;
+            box-shadow: 0px 10px 90px rgba(0, 0, 0, 0.153);
+        }
+
+        .display {
+            width: 80%;
+            height: 20%;
+            background-color: rgba(211, 211, 211, 0.442);
+            gap: 10px;
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            height: 8%;
+            margin-top: 20px;
+            border: 1px solid;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .h1 {
+            font-weight: 800px;
+        }
+
+        button {
+            width: 80%;
+            height: 10%;
+            margin-bottom: 10px;
+            font-size: 15px;
+            background-color: rgb(32, 129, 167);
+            border: none;
+            color: white;
+        }
+
+        .output {
+            width: 80%;
+            height: 10%;
+            background-color: rgba(144, 238, 144, 0.518);
+            font-family: 30px;
+            text-align: center;
+            align-content: center;
+            color: green;
+            display: none;
+            font-size: 23px;
+    }
+
+        .total-amount{
+            font-size: 20px;
+            
+        }
+        .total-balance{
+        font-size: 30px;
+      color: rgb(18, 82, 155);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box-1">
+            <h1 class="h1">ATM Withdrawal</h1>
+            <div class="display">
+               <div class="total-balance"> Total Balance  </div>
+                <div class="total-amount" id="total-amount"></div>
+
+            </div>
+            <input type="text" id="input-1" placeholder="Enter amount to Withdraw">
+            <button onclick="checkBalance()">Withdraw</button>
+            <div class="output" id="output">Withdraw Successsful</div>
+        </div>
+    </div>
+</body>
+<script>
+    let balance =  10000;
+    let withdraw = 0;
+    document.getElementById("total-amount").innerHTML = balance;
+
+    function checkBalance() {
+
+        withdraw = document.getElementById("input-1").value;
+        balance = balance - Number(withdraw);
+        document.getElementById("total-amount").innerHTML = balance;
+        document.getElementById("output").style.display = "block"
+
+    }
+
+</script>
+
+</html>

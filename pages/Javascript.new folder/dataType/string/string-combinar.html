@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-box {
+            height: 65vh;
+            width: 35vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.213);
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        input {
+            height: 45px;
+            width: 80%;
+
+        }
+
+        button {
+            height: 45px;
+            width: 82%;
+            font-size: 20px;
+            border: none;
+            background-color: rgb(0, 215, 0);
+            border-radius: 5px;
+            color: white;
+        }
+
+        p {
+            height: 69px;
+            width: 90%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.172);
+
+        }
+
+        pre {
+            height: 65px;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            color: rgb(42, 139, 0);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17px;box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.172);
+        }
+
+        @media (min-width:300px)and (max-width:450px) {
+            body {
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                background-color: rgb(210, 210, 210);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main-box {
+                height: 85vh;
+                width: 90vw;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            h1 {
+                color: navy;
+            }
+
+            input {
+                height: 45px;
+                width: 80%;
+
+            }
+
+            button {
+                height: 45px;
+                width: 82%;
+                font-size: 20px;
+                border: none;
+                background-color: rgb(0, 215, 0);
+                border-radius: 5px;
+                color: white;
+            }
+
+            p {
+                height: 60px;
+                width: 90%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.172);
+
+            }
+
+            pre {
+                height: 65px;
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(0, 0, 0);
+                color: rgb(57, 191, 0);
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-box">
+            <h1>Name Combinar</h1>
+            <h3>First Name</h3>
+            <input type="text" id="input-one">
+            <h3>Last Name</h3>
+            <br>
+            <input type="text" id="input-two">
+            <br>
+            <button onclick="stringCombinar()">Combine Names</button>
+            
+            <p id="display-name"></p>
+            <pre id="display-lastname"></pre>
+        </div>
+    </div>
+    <script>
+        function stringCombinar() {
+            let str1 = document.getElementById("input-one").value;
+            let str2 = document.getElementById("input-two").value;
+            // let combinar = str1 + str2 ;
+            document.getElementById("display-name").innerHTML = "Full Name :" + str1 + " " + str2;
+            document.getElementById("display-lastname").innerHTML = "Full Name :" + str1 + " " + str2;
+        }
+    </script>
+</body>
+
+</html>

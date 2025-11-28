@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+
+<body>
+    <div class="main-container">
+        <img src="" alt="image" id="image" height="300px" width="300px">
+        <h1 id="name"></h1>
+        <h2 id="collage"></h2>
+        <h3 id="dateofbirth"></h3>
+        <h4 id="sub"></h4>
+        <h5 id="age"></h5>
+        <p id="hobby"></p>
+
+
+    </div>
+
+</body>
+<script>
+    let carimage = "../../assets/images/touann-gatouillat-vergos-dSBJv66Yjlk-unsplash.jpg";
+    let name = "Arsalan Khan";
+    let collagead = "A.D Collage"
+    let date = " 27 / 9/ 2006"
+    let subject = "English & Hindi"
+    let age = 19;
+    let hobby = "Cricket & Gaming"
+
+    document.getElementById("image").src = carimage;
+    document.getElementById("name").innerHTML = "My name:" + name;
+    document.getElementById("collage").innerHTML = "Collage:" + collagead;
+    document.getElementById("dateofbirth").innerHTML = "Date of Birth:" + date;
+    document.getElementById("sub") .innerHTML = "Subject :" + subject;
+    document.getElementById("hobby").innerHTML = "Hobby" + hobby
+    document.getElementById("age").innerHTML = "Age :" + age;
+</script>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: antiquewhite;
+        }
+
+        .main-container {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .lights {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .light {
+            height: 50%;
+            width: 20%;
+        }
+
+        .one {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .two {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .three {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .four {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .five {
+            background-color: rgb(255, 255, 255);
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .on {
+            display: none;
+        }
+        button{
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            font-size: 20px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="lights">
+            <div class="light one">
+                <img id="red-light" class="on"
+                    src="https://5.imimg.com/data5/SELLER/Default/2024/8/442214455/ZE/GP/RH/146503082/9-watt-colored-led-bulb-500x500.jpg"
+                    alt="">
+                <img id="off-light" class="off"
+                    src="https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg"
+                    alt="">
+            </div>
+            <div class="light two">
+                <img id="green-light" class="on" src="https://5.imimg.com/data5/SELLER/Default/2024/8/442214821/WK/FU/LC/146503082/1-copy-2.jpg" alt="">
+                <img id="off-two-light" class="off"
+                src="https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg"
+                alt="">
+            </div>
+            <div class="light three">
+                <img id="blue-light" class="on" src="https://5.imimg.com/data5/SELLER/Default/2024/8/442215641/SH/PH/SO/146503082/1-copy-3-500x500.jpg" alt="">
+                <img id="off-three-light" class="off"
+                src="https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg"
+                alt="">
+            </div>
+            <div class="light four">
+                <img id="yellow-light" class="on" src="https://www.ailvin.com/sites/default/files/2023-06/B22-BLUE-fotor-2023062802326.jpg" alt="">
+                <img id="off-four-light" class="off"
+                src="https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg"
+                alt="">
+            </div>
+            <div class="light five">
+                <img id="brown-light" class="on" src="https://m.media-amazon.com/images/I/61D7yRtvm6L.jpg" alt="">
+                <img id="off-five-light" class="off"
+                src="https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg"
+                alt="">
+            </div>
+        </div>
+
+        <br>
+        <div class="button">
+            <button style="background-color: red;" onclick="red()">Red</button>
+            <button style="background-color: rgb(0, 255, 0);" onclick="green()">Green</button>
+            <button style="background-color: yellow;" onclick="blue()">Blue</button>
+            <button style="background-color: blue;" onclick="yellow()">Yellow</button>
+            <button style="background-color: rgb(255, 0, 195);" onclick="brown()">Pink</button>
+        </div>
+    </div>
+</body>
+<script>
+    function red() {
+        document.getElementById("red-light").style.display = "block"
+        document.getElementById("off-light").style.display = "none"
+    }
+    function green() {
+        document.getElementById("green-light").style.display = "block"
+        document.getElementById("off-two-light").style.display = "none"
+    }
+    function blue() {
+        document.getElementById("blue-light").style.display = "block"
+        document.getElementById("off-three-light").style.display = "none"
+    }
+    function yellow() {
+        document.getElementById("yellow-light").style.display = "block"
+        document.getElementById("off-four-light").style.display = "none"
+    }
+    function brown() {
+        document.getElementById("brown-light").style.display = "block"
+        document.getElementById("off-five-light").style.display = "none"
+    }
+</script>
+
+</html>

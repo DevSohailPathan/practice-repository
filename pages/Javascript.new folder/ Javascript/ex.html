@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripty</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(194, 213, 213);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+
+        }
+
+        .display-area {
+            height: 80%;
+            width: 80%;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .sereen-box {
+            height: 400px;
+            width: 100%;
+            background-color: aquamarine;
+            font-size: 35PX;
+            color: rgb(0, 0, 0);
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 3px solid black;
+            border-radius: 6px;
+        }
+
+        .mini-box-1 {
+            height: 50px;
+            width: 450px;
+            background-color: rgb(202, 203, 205);
+
+        }
+
+        .mini-box-2 {
+            height: 50px;
+            width: 90px;
+            background-color: rgb(156, 155, 163);
+        }
+
+        button {
+            height: 40px;
+            width: 150PX;
+            font-size: 20PX;
+            border: none;
+            border-radius: 15PX;
+            margin-top: 20PX;
+            color: rgb(255, 255, 255);
+            margin-left: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: blueviolet;
+        }
+
+        .buttons {
+            height: 46%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 4px solid black;
+
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--  -->
+        <div class="section-one">
+            <div class="display-area">
+                <div class="sereen-box" id="display">
+                    <p>Well come to universal Calendar</p>
+                    <br>
+                    <p id="today-is"></p>
+                </div>
+                <div class="buttons" id="buttons">
+                    <button id="sun" onclick="Sunday()"> Sunday</button>
+                    <button id="mon" onclick="Monday()"> Monday</button>
+                    <button id="tue" onclick="Tuesday()"> Tuesday</button>
+                    <button id="wed" onclick="Wednasday()"> Wednesday</button>
+                    <button id="thu" onclick="Thursday()"> Thursday</button>
+                    <button id="fri" onclick="Friday()"> Friday</button>
+                    <button id="sat" onclick=" Satarday()"> Satarday</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--  -->
+<script>
+    function Sunday() {
+        document.getElementById("display").style.backgroundColor = "#A3B087";
+        document.getElementById("buttons").style.backgroundColor = "#F0E491";
+        document.getElementById("sun").style.backgroundColor = "#001BB7";
+        document.getElementById("today-is").innerHTML = "Today is Sunday";
+    }
+    function Monday() {
+        document.getElementById("display").style.backgroundColor = "#4A70A9";
+        document.getElementById("buttons").style.backgroundColor = "#000000";
+        document.getElementById("mon").style.backgroundColor = "#4A70A9";
+        document.getElementById("today-is").innerHTML = "Today is Monday";
+    }
+    function Tuesday() {
+        document.getElementById("display").style.backgroundColor = "#CBD99B";
+        document.getElementById("buttons").style.backgroundColor = "#F87B1B";
+        document.getElementById("tue").style.backgroundColor = "#ED3F27";
+        document.getElementById("today-is").innerHTML = "Today is Thuesday";
+    }
+    function Wednasday() {
+        document.getElementById("display").style.backgroundColor = "#456882";
+        document.getElementById("buttons").style.backgroundColor = "#FFF0DD";
+        document.getElementById("wed").style.backgroundColor = "#1B3C53";
+        document.getElementById("today-is").innerHTML = "Today is Wednesday";
+    }
+    function Thursday() {
+        document.getElementById("display").style.backgroundColor = "#A6B28B";
+        document.getElementById("buttons").style.backgroundColor = "#F5C9B0";
+        document.getElementById("thu").style.backgroundColor = "#1C352D";
+        document.getElementById("today-is").innerHTML = "Today is Thusday";
+    }
+    function Friday() {
+        document.getElementById("display").style.backgroundColor = "#A1C2BD";
+        document.getElementById("buttons").style.backgroundColor = "#708993";
+        document.getElementById("fri").style.backgroundColor = "#19183B";
+        document.getElementById("today-is").innerHTML = "Today is Friday";
+    }
+    function Satarday() {
+        document.getElementById("display").style.backgroundColor = "#A6B28B";
+        document.getElementById("buttons").style.backgroundColor = "#F5C9B0";
+        document.getElementById("sat").style.backgroundColor = "#FEA405";
+        document.getElementById("today-is").innerHTML = "Today is Saturday";
+    }
+
+
+
+
+
+
+</script>
+
+</html>

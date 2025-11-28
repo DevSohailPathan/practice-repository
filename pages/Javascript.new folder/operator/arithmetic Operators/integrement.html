@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <button onclick="countNumber()"> Click </button>
+    <p id="displayy"></p>
+    <button onclick="countNumberr()"> Click number </button>
+    <script>
+
+        let a = 0;
+
+        function countNumber() {
+           a= a + 1;
+            document.getElementById("display").innerHTML = a;
+        }
+        let y = 0;
+
+        function countNumberr() {
+            y = y-1;
+            document.getElementById("displayy").innerHTML = y;
+        }
+    </script>
+</body>
+
+</html>

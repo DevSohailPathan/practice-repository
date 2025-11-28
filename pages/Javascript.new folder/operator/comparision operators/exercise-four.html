@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 60%;
+            width: 35%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.193);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 80%;
+            height: 7%;
+        }
+        h1{
+            color: rgb(30, 157, 30);
+        }
+
+        button {
+            height: 8%;
+            width: 50%;
+            background-color: rgb(33, 162, 33);
+            border: none;
+            border-radius: 8px;
+            font-size: 100%;
+            color: white;
+        }
+
+        p {
+            height: 17%;
+            width: 80%; box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.193);
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            font-size: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 89, 117);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-container">
+        <div class="box">
+
+            <h1>Score Comparator </h1>
+            <b> First Score :</b>
+            <input type="text" id="input-one">
+            <b>Second Score :</b>
+            <input type="text" id="input-two"><br>
+            <button onclick="scorecard()">Compare Score</button>
+            <p id="result"></p>
+
+        </div>
+    </div>
+
+    <script>
+
+        function scorecard() {
+            let score1 = document.getElementById("input-one").value;
+            let score2 = document.getElementById("input-two").value;
+
+            if (score1 >= score2) {
+                document.getElementById("result").innerHTML = "First Score is grater than second score"
+            }
+            else {
+                document.getElementById("result").innerHTML = "First Score is smaller than Second score "
+            }
+
+        }
+    </script>
+</body>
+
+</html>

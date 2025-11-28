@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1 id="display"></h1>
+<input type="text" id="input-one">
+<br>
+<br>
+<input type="text" id="input-two">
+<button onclick="stringone()">click me</button>
+<body>
+    <script>
+        let string1 = prompt("enter number")
+        let string2 = prompt("enter number")
+        let c = string1 + string2 ;
+        alert (c)
+        function stringone(){
+            let str1 = document.getElementById("input-one").value;
+            let str2 = document.getElementById("input-two").value;
+            let concast =str1 + str2;
+            document.getElementById("display").innerHTML= concast;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 60%;
+            width: 35%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.233);
+        }
+
+        p {
+            height: 60px;
+            background-color: rgb(255, 255, 255);
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.143);
+            align-items: center;
+            border-radius: 10px;
+
+            font-size: 30px;
+            color: green;
+
+        }
+
+        .check-answer {
+            height: 40px;
+            border: none;
+            width: 35%;
+            border-radius: 5px;
+            background-color: rgb(238, 228, 228);
+            font-size: 20px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.233);
+            background-color: rgb(159, 41, 255);
+            color: white;
+        }
+
+        .next-question {
+            height: 40px;
+            width: 35%;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.233);
+            background-color: rgb(154, 31, 255);
+            color: white;
+        }
+
+        input {
+            width: 68%;
+            height: 30px;
+        }
+
+        b {
+            font-size: 19px;
+        }
+
+        h1 {
+            color: rgb(140, 0, 255);
+        }
+
+        @media (min-width:300px) and (max-width:450px) {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main {
+                height: 60%;
+                width: 95%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border-radius: 10px;
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.233);
+            }
+
+            p {
+                height: 60px;
+                background-color: rgb(255, 255, 255);
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.143);
+                align-items: center;
+                border-radius: 10px;
+                border: 2px solid rgb(83, 0, 151);
+                font-size: 30px;
+                color: green;
+
+            }
+
+            .check-answer {
+                height: 40px;
+                border: none;
+                width: 75%;
+                border-radius: 5px;
+                background-color: rgb(238, 228, 228);
+                font-size: 20px;
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.233);
+                background-color: rgb(159, 41, 255);
+                color: white;
+            }
+
+            .next-question {
+                height: 40px;
+                width: 75%;
+                font-size: 20px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.233);
+                background-color: rgb(154, 31, 255);
+                color: white;
+            }
+
+            input {
+                width: 68%;
+                height: 30px;
+            }
+
+            b {
+                font-size: 19px;
+            }
+
+            h1 {
+                color: rgb(140, 0, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="main">
+            <h1>Multiplication Quiz</h1>
+            <!-- question -->
+            <b id="question"></b>
+            <!-- input -->
+            <input type="text" id="input-one" placeholder="Enter the Answer...">
+            <!-- first button -->
+            <button class="check-answer" onclick="checkanswer()"> Check Answer</button>
+            <!-- display -->
+            <p id="second-display"></p>
+            <!-- second button -->
+            <button class="next-question" onclick="nextquestion()">Next Question</button>
+        </div>
+    </div>
+    <script>
+
+        let num1 = Math.random() * 10;
+        let num2 = Math.random() * 10;
+
+        num1 = Math.floor(num1);
+        num2 = Math.floor(num2);
+        let num3 = num1 * num2;
+        document.getElementById("question").innerHTML = "What is " + num1 + " x " + num2 + " = ?  "
+
+        // function ...................
+
+        function checkanswer() {
+            let answer = document.getElementById("input-one").value;
+            let result = answer == num3;
+            document.getElementById("second-display").innerHTML = result;
+        }
+
+         // function ...................
+         
+        function nextquestion() {
+            location.reload()
+        }
+    </script>
+
+
+</body>
+
+</html>

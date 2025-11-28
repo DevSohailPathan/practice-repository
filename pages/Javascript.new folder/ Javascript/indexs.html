@@ -1,0 +1,3543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* first-page */
+.first-page {
+    height: 90vh;
+    width: 100vw;
+    background-color: rgb(255, 0, 0);
+}
+
+/* header */
+.headerr {
+    height: 8%;
+    width: 100%;
+    background-color: rgb(5, 0, 100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: fixed;
+
+}
+
+.me-name {
+    height: 100%;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.hapc {
+    height: 100%;
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header {
+    color: rgb(0, 174, 255);
+    margin-left: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+
+header:hover {
+    background-color:  rgb(0, 174, 255);
+    color: white;
+    border-radius: 5px;
+}
+
+.home {
+    color: rgb(0, 174, 255);
+}
+
+.My-name {
+    margin-left: 80px;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 174, 255);
+}
+
+/* main */
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+
+/* my-text */
+.my-text {
+    height: 100%;
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-button {
+    height: 35px;
+    width: 90px;
+    font-size: 18px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.resume-buttonn {
+    height: 35px;
+    width: 90px;
+    font-size: 18px;
+    background-color: rgb(1, 166, 23);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.hi-name {
+    font-size: 30px;
+    color: rgb(0, 174, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+i {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: cursive;
+
+}
+
+h1 {
+    color: rgb(0, 174, 255);
+}
+
+h3 {
+    color: rgb(0, 174, 255);
+}
+
+.developer-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(10, end) forwards, blink 0.75s step-end infinite;
+    font-size: 26px;
+    color: rgb(0, 174, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+.very-small-img {
+    height: 60px;
+    width: 300px;
+    background-color: #3dc70b00;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ver-small-img-hw {
+    height: 80%;
+    width: 30R;
+    margin-left: 25px;
+}
+
+/* my-img */
+.my-img {
+    height: 100%;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.self-img {
+    height: 50%;
+    width: 60%;
+    box-shadow: 0px 0px 10px 1px rgb(0, 174, 255) ;
+}
+
+/* footer */
+.footer {
+    height: 13%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+
+}
+
+/* experiance box */
+.experiance-section {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* child */
+.experiance {
+    height: 100%;
+    width: 27%;
+    box-shadow: 0px 0px 10px 1px rgb(0, 174, 255);
+    display: flex; transition: transform 0.3s;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+.experiance:hover {
+    transform: translateY(-5px);
+   
+}
+.project {
+    height: 100%;
+    width: 27%;
+    box-shadow: 0px 2px 10px  0px rgb(0, 174, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center; transition: transform 0.3s;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.project:hover {
+    transform: translateY(-5px);
+   
+}
+.clind {
+    height: 100%;
+    width: 27%;
+    box-shadow: 0px 0px 10px 1px rgb(0, 174, 255);
+    display: flex; transition: transform 0.3s;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.clind:hover {
+    transform: translateY(-5px);
+   
+}
+/* 3 child img */
+.eximg {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiance-img {
+    background-color: rgb(0, 0, 0);
+}
+
+.project-img {
+    background-color: rgb(0, 0, 0);
+}
+
+.clind-img {
+    background-color: rgb(0, 0, 0);
+}
+
+/* 3 chold text */
+.extext {
+    height: 100%;
+    width: 70%;
+}
+
+.experiance-text {
+    background-color: rgb(0, 0, 0);
+}
+
+.project-text {
+    background-color: rgb(0, 0, 0);
+}
+
+.clind-text {
+    background-color: rgb(0, 0, 0);
+}
+
+.ex-img-hw {
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+}
+.ex-big-text {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 174, 255);
+
+}
+
+.ex-small-text {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* third-page */
+.third-page {
+    height: 65%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.about-page {
+    height: 90%;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.About-text {
+    font-size: 20px;
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* average-page */
+.average-box {
+    height: 90%;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.average {
+    height: 2%;
+    width: 80%;
+}
+
+.htmlll {
+    background-color: rgb(255, 255, 255);
+}
+
+.cssss {
+    background-color: rgb(255, 255, 255);
+}
+
+.javascriptt {
+    background-color: rgb(255, 255, 255);
+}
+
+.dsignn {
+    background-color: rgb(255, 255, 255);
+}
+
+.text {
+    height: 24%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+
+.average-text {
+    margin-right: 418PX;
+    color: white;
+}
+
+.average-textt {
+    margin-right: 425PX;color: white;
+}
+
+.average-texttt {
+    margin-right: 365PX;color: white;
+}
+
+.average-textttt {
+    margin-right: 353pX;color: white;
+}
+
+/* average line */
+.line {
+    height: 100%;
+}
+
+.htmll {
+    width: 80%;
+    background-color: rgb(0, 174, 255);
+}
+
+.csss {
+    width: 70%;
+    background-color: rgb(0, 174, 255);
+}
+
+.javaa {
+    width: 20%;
+    background-color: rgb(0, 174, 255);
+}
+
+.designn {
+    width: 60%;
+    background-color: rgb(0, 174, 255);
+}
+
+/* fourth page */
+.fourth-page {
+    height: 90vh;
+    width: 100vw;
+    background-color: yellowgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* fourth header */
+.my {
+    height: 10%;
+    width: 100%;
+}
+
+.worktext {
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 174, 255);
+}
+
+.workbutton {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30PX;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 174, 255);
+}
+
+.button-one {
+    height: 40px;
+    width: 130px;
+    background-color: rgb(184, 233, 254);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button-one:hover {
+    background-color: rgb(0, 174, 255);
+    color: white;
+}
+
+/* cards */
+.cards {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    height: 75%;
+    width: 18%;
+   
+    border: 0.1px solid rgb(0, 183, 255);
+    animation: mymove 3s infinite;
+
+}
+
+@keyframes mymove {
+    50% {
+        border-color: rgb(117, 16, 250);
+        
+    }
+}
+
+.cardhtml {
+    background-color: yellowgreen;
+
+}
+
+.cardcss {
+    background-color: rgb(205, 50, 50);
+}
+
+.cardjava {
+    background-color: rgb(50, 205, 91);
+}
+
+.carddesign {
+    background-color: rgb(99, 50, 205);
+}
+
+.cardbootstrap {
+    background-color: rgb(148, 130, 187);
+}
+
+/* card-img */
+.two {
+    height: 55%;
+    width: 100%;
+
+}
+
+.htmlimg {
+    background-color: rgb(0, 0, 0);
+}
+
+.cssimg {
+    background-color: rgb(0, 0, 0);
+}
+
+.javaimg {
+    background-color: rgb(0, 0, 0);
+}
+
+.designimg {
+    background-color: rgb(0, 0, 0);
+}
+
+.bootstrapimg {
+    background-color: rgb(0, 0, 0);
+}
+
+/* card-text */
+.three {
+    height: 30%;
+    width: 100%;
+}
+
+.htmltext {
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.csstext {
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.javatext {
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.designtext {
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.bootstraptext {
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.view-project {
+    height: 35px;
+ width: 120px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: none;
+    transition: transform 0.9s, box-shadow 0.8s;
+    margin-bottom: 50px;
+    color: rgb(0, 19, 93);
+}
+
+.view-project:hover {
+
+    transform: scale(1.1);
+}
+
+/* card-button */
+.four {
+    height: 15%;
+    width: 100%;
+}
+
+.htmlbutton {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cssbutton {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.javabutton {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designbutton {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bootstrapbutton {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card-img HW */
+.card-img {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/* contact-section */
+.contact-container {
+    max-width: 950px;
+
+    margin: 50px auto;
+    background: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 15px;
+  
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(0, 174, 255);
+    margin-bottom: 10px;
+}
+
+p.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.info-box {
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0px 2px 8px 0px rgb(0, 174, 255);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+   
+}
+
+.info-box h3 {
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.info-box p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #2e7d32;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #2e7d32;
+}
+
+.contact-form button {
+    background: #2e7d32;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+
+@media (min-width:300px) and (max-width:450px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .main-container {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /* first-page */
+    .first-page {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255, 0, 0);
+    }
+
+    /* header */
+    .headerr {
+        height: 8%;
+        width: 100%;
+        background-color: rgb(255, 209, 192);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        position: fixed;
+
+    }
+
+    .me-name {
+        height: 100%;
+        width: 40%;
+        background-color: rgb(255, 209, 192);
+        align-items: center;
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+
+    .hapc {
+        height: 100%;
+        width: 60%;
+        background-color: rgb(255, 209, 192);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    header {
+        margin-left: 0%;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .My-name {
+        margin-left: 0%;
+        display: none;
+    }
+
+    /* main */
+    .main {
+        height: 100vh;
+        width: 100%;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* my-text */
+    .my-text {
+        height: 60%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hi-name {
+        font-size: 20px;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    i {
+        font-size: 30px;
+        color: #F87B1B;
+    }
+
+    h1 {
+        color: rgb(3, 39, 117);
+    }
+
+    h3 {
+        color: #F87B1B;
+    }
+
+    .developer-text {
+        font-size: 20px;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .very-small-img {
+        height: 60px;
+        width: 300px;
+        background-color: #3dc70b00;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .ver-small-img-hw {
+        height: 80%;
+        width: 30R;
+        margin-left: 0px;
+    }
+
+    /* my-img */
+    .my-img {
+        height: 40%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .self-img {
+        height: 70%;
+        margin-top: 70px;
+        width: 60%;
+ box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.153);
+    }
+
+    /* footer */
+    .footer {
+        height: 15%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    /* experiance box */
+    .experiance-section {
+        height: 70%;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* child */
+    .experiance {
+        height: 100%;
+        width: 33%;
+        background-color: rgb(255, 244, 240);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .project {
+        height: 100%;
+        width: 34%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .clind {
+        height: 100%;
+        width: 33%;
+        background-color: rgb(246, 219, 209);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* 3 child img */
+    .eximg {
+        height: 100%;
+        width: 30%;
+    }
+
+    .experiance-img {
+        background-color: rgb(244, 255, 222);
+    }
+
+    .project-img {
+        background-color: yellowgreen;
+    }
+
+    .clind-img {
+        background-color: yellowgreen;
+    }
+
+    /* 3 chold text */
+    .extext {
+        height: 100%;
+        width: 70%;
+    }
+
+    .experiance-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .project-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .clind-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .ex-img-hw {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ex-big-text {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(1, 1, 119);
+
+    }
+
+    .ex-small-text {
+        font-size: 15px;
+        color: rgb(255, 78, 14);
+        margin-left: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* second-page */
+    .second-page {
+        height: 130vh;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .second {
+        height: 18%;
+        width: 56%;
+    }
+
+    .service {
+        width: 84%;
+        height: 150px;
+        background-color: rgb(249, 233, 227);
+        text-align: center;
+        box-shadow: 10px 4px 100px 10px rgb(230, 227, 227);
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .html {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        transition: transform 0.9s, box-shadow 0.8s;
+    }
+
+    .html:hover {
+        background-color: #d29bff;
+        transform: scale(1.1);
+    }
+
+    .css {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.9s, box-shadow 0.8s;
+    }
+
+    .css:hover {
+        background-color: #ffe590;
+        transform: scale(1.1);
+    }
+
+    .javascript {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        transition: transform 0.9s, box-shadow 0.8s;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .javascript:hover {
+        background-color: #ff96b9;
+        transform: scale(1.1);
+    }
+
+    .dsign {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.9s, box-shadow 0.8s;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+
+    .dsign:hover {
+        background-color: #9adbff;
+        transform: scale(1.1);
+    }
+
+    .second-page-small-img-hw {
+        height: 30px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .sohal {
+        height: 22%;
+        width: 22%;
+        display: flex;
+        justify-content: center;
+        border-radius: 100%;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .html-second-img {
+        background-color: #8C00FF;
+    }
+
+    .css-second-img {
+        background-color: #FFC400;
+    }
+
+    .js-second-img {
+        background-color: #FF3F7F;
+    }
+
+    .design-second-img {
+        background-color: #63C8FF;
+    }
+
+    .Second-first-font {
+        font-size: 22px;
+        margin-top: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #F87B1B;
+    }
+
+    .second-two-font {
+        font-size: 18px;
+        margin-top: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(3, 39, 117);
+    }
+
+    .right-arrow {
+        height: 55px;
+        width: 75px;
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 100px;
+        color: navy;
+        display: none;
+
+
+    }
+
+    /* third-page */
+    .third-page {
+        height: 140vh;
+        width: 100%;
+        background-color: rgb(239, 216, 204);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-page {
+        height: 40%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-me {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .About-text {
+        font-size: 18px;
+        margin-left: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .resume-button {
+        height: 45px;
+        width: 100px;
+        font-size: 18px;
+        background-color: rgb(0, 123, 255);
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+
+    /* average-page */
+ .average-box {
+        height: 60%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .average {
+        height: 2%;
+        width: 90%;
+    }
+
+    .htmlll {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .cssss {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .javascriptt {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .dsignn {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .text {
+        height: 24%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .average-text {
+        margin-right: 310PX;
+        font-size: 20px;
+    }
+
+    .average-textt {
+        margin-right: 328PX;
+        font-size: 20px;
+    }
+
+    .average-texttt {
+        margin-right: 250PX;
+        font-size: 20px;
+    }
+
+    .average-textttt {
+        margin-right: 250PX;
+        font-size: 20px;
+    }
+
+
+    /* average line */
+    .line {
+        height: 100%;
+    }
+
+    .htmll {
+        width: 80%;
+        background-color: #F87B1B;
+    }
+
+    .csss {
+        width: 70%;
+        background-color: #F87B1B;
+    }
+
+    .javaa {
+        width: 20%;
+        background-color: #F87B1B;
+    }
+
+    .designn {
+        width: 60%;
+        background-color: #F87B1B;
+    }
+
+    /* fourth page */
+    .fourth-page {
+        height: 200vh;
+        width: 100vw;
+        background-color: yellowgreen;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* fourth header */
+    .my {
+        height: 5%;
+        width: 100%;
+    }
+
+    .worktext {
+        background-color: whitesmoke;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbutton {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: navy;
+    }
+
+    .button-one {
+        height: 40px;
+        width: 110px;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        border-radius: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .button-one:hover {
+        background-color: #F87B1B;
+        color: white;
+    }
+
+    /* cards */
+    .cards {
+        height: 180vh;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one {
+        height: 80%;
+        width: 60%;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.237);
+        border-radius: 5px;
+    }
+
+    .cardhtml {
+        background-color: yellowgreen;
+
+
+    }
+
+    .cardcss {
+        background-color: rgb(205, 50, 50);
+    }
+
+    .cardjava {
+        background-color: rgb(50, 205, 91);
+    }
+
+    .carddesign {
+        background-color: rgb(99, 50, 205);
+    }
+
+    .cardbootstrap {
+        background-color: rgb(148, 130, 187);
+    }
+
+    /* card-img */
+    .two {
+        height: 80%;
+        width: 100%;
+
+    }
+
+    .htmlimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .cssimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .javaimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .designimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .bootstrapimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* card-text */
+    .three {
+        height: 30%;
+        width: 100%;
+        display: none;
+    }
+
+    .htmltext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .csstext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .javatext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .designtext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .bootstraptext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .view-project {
+        height: 35px;
+        width: 120px;
+        font-size: 17px;
+        border-radius: 7px;
+        border: none;
+        transition: transform 0.9s, box-shadow 0.8s;
+        margin-bottom: 0px;
+        color: rgb(0, 19, 93);
+    }
+
+    .view-project:hover {
+
+        transform: scale(1.1);
+    }
+
+    /* card-button */
+    .four {
+        height: 20%;
+        width: 100%;
+    }
+
+    .htmlbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cssbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .javabutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .designbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bootstrapbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* card-img HW */
+ .card-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* contact-------page */
+    .contact-container {
+        max-width: 950px;
+
+        margin: 50px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.153);
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        color: rgb(255, 137, 94);
+        margin-bottom: 10px;
+    }
+
+    p.subtitle {
+        text-align: center;
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .info-box {
+        background-color: rgb(249, 233, 227);
+        border-radius: 12px;
+        padding: 20px;
+        margin: 10px;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .info-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-box h3 {
+        background-color: rgb(249, 233, 227);
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .info-box p {
+        color: #333;
+        font-size: 15px;
+    }
+
+    .contact-form h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 22px;
+        color: #2e7d32;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        font-size: 15px;
+        transition: border 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border: 1px solid #2e7d32;
+    }
+
+    .contact-form button {
+        background: #2e7d32;
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+}
+
+/* for a tab */
+@media (min-width:450px) and (max-width:600px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .main-container {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /* first-page */
+    .first-page {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255, 0, 0);
+    }
+
+    /* header */
+    .header {
+        height: 8%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        position: none;
+    }
+
+    .me-name {
+        height: 100%;
+        width: 40%;
+        background-color: rgb(255, 209, 192);
+        align-items: center;
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+
+    .hapc {
+        height: 100%;
+        width: 60%;
+        background-color: rgb(255, 209, 192);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .home {
+
+        color: #F87B1B;
+
+
+    }
+
+    header {
+        margin-left: 0%;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .My-name {
+        margin-left: 0%;
+        display: none;
+    }
+
+    /* main */
+    .main {
+        height: 100vh;
+        width: 100%;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* my-text */
+    .my-text {
+        height: 55%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hi-name {
+        font-size: 20px;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    i {
+        font-size: 30px;
+        color: #F87B1B;
+    }
+
+    h1 {
+        color: rgb(3, 39, 117);
+    }
+
+    h3 {
+        color: #F87B1B;
+    }
+
+    .developer-text {
+        font-size: 25px;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .very-small-img {
+        height: 60px;
+        width: 300px;
+        background-color: #3dc70b00;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .ver-small-img-hw {
+        height: 80%;
+        width: 30R;
+        margin-left: 0px;
+    }
+
+    /* my-img */
+    .my-img {
+        height: 45%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .self-img {
+        height: 70%;
+        margin-top: 70px;
+        width: 60%;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.153);
+    }
+
+    /* footer */
+    .footer {
+        height: 15%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    /* experiance box */
+    .experiance-section {
+        height: 70%;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* child */
+    .experiance {
+        height: 100%;
+        width: 33%;
+        background-color: rgb(255, 244, 240);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .project {
+        height: 100%;
+        width: 34%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .clind {
+        height: 100%;
+        width: 33%;
+        background-color: rgb(246, 219, 209);
+        display: flex;
+        flex-direction: row;
+justify-content: center;
+        align-items: center;
+
+    }
+
+    /* 3 child img */
+    .eximg {
+        height: 100%;
+        width: 30%;
+    }
+
+    .experiance-img {
+        background-color: rgb(244, 255, 222);
+    }
+
+    .project-img {
+        background-color: yellowgreen;
+    }
+
+    .clind-img {
+        background-color: yellowgreen;
+    }
+
+    /* 3 chold text */
+    .extext {
+        height: 100%;
+        width: 70%;
+    }
+
+    .experiance-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .project-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .clind-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .ex-img-hw {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ex-big-text {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(1, 1, 119);
+
+    }
+
+    .ex-small-text {
+        font-size: 15px;
+        color: rgb(255, 78, 14);
+        margin-left: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* second-page */
+    .second-page {
+        height: 130vh;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .second {
+        height: 18%;
+        width: 56%;
+    }
+
+    .service {
+        width: 84%;
+        height: 150px;
+        background-color: rgb(249, 233, 227);
+        text-align: center;
+        box-shadow: 10px 4px 100px 10px rgb(230, 227, 227);
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .html {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        transition: transform 0.9s, box-shadow 0.8s;
+    }
+
+    .html:hover {
+        background-color: #d29bff;
+        transform: scale(1.1);
+    }
+
+    .css {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.9s, box-shadow 0.8s;
+    }
+
+    .css:hover {
+        background-color: #ffe590;
+        transform: scale(1.1);
+    }
+
+    .javascript {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        transition: transform 0.9s, box-shadow 0.8s;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .javascript:hover {
+        background-color: #ff96b9;
+        transform: scale(1.1);
+    }
+
+    .dsign {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.9s, box-shadow 0.8s;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+
+    .dsign:hover {
+        background-color: #9adbff;
+        transform: scale(1.1);
+    }
+
+    .second-page-small-img-hw {
+        height: 30px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .sohal {
+        height: 22%;
+        width: 22%;
+        display: flex;
+        justify-content: center;
+        border-radius: 100%;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .html-second-img {
+        background-color: #8C00FF;
+    }
+
+    .css-second-img {
+        background-color: #FFC400;
+    }
+
+    .js-second-img {
+        background-color: #FF3F7F;
+    }
+
+    .design-second-img {
+        background-color: #63C8FF;
+    }
+
+    .Second-first-font {
+        font-size: 22px;
+        margin-top: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #F87B1B;
+    }
+
+    .second-two-font {
+        font-size: 18px;
+        margin-top: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(3, 39, 117);
+    }
+
+    .right-arrow {
+        height: 55px;
+        width: 75px;
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 100px;
+        color: navy;
+        display: none;
+
+
+    }
+
+    /* third-page */
+    .third-page {
+        height: 140vh;
+        width: 100%;
+        background-color: rgb(239, 216, 204);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-page {
+        height: 40%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-me {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .About-text {
+        font-size: 23px;
+        margin-left: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .resume-button {
+        height: 45px;
+        width: 100px;
+        font-size: 18px;
+        background-color: rgb(0, 123, 255);
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+
+    /* average-page */
+    .average-box {
+        height: 60%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .average {
+        height: 2%;
+        width: 90%;
+    }
+
+    .htmlll {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .cssss {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .javascriptt {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .dsignn {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .text {
+        height: 24%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .average-text {
+        margin-right: 430PX;
+        font-size: 25px;
+    }
+
+    .average-textt {
+        margin-right: 448PX;
+        font-size: 25px;
+    }
+
+    .average-texttt {
+margin-right: 360PX;
+        font-size: 25px;
+    }
+
+    .average-textttt {
+        margin-right: 350PX;
+        font-size: 25px;
+    }
+
+
+    /* average line */
+    .line {
+        height: 100%;
+    }
+
+    .htmll {
+        width: 80%;
+        background-color: #F87B1B;
+    }
+
+    .csss {
+        width: 70%;
+        background-color: #F87B1B;
+    }
+
+    .javaa {
+        width: 20%;
+        background-color: #F87B1B;
+    }
+
+    .designn {
+        width: 60%;
+        background-color: #F87B1B;
+    }
+
+    /* fourth page */
+    .fourth-page {
+        height: 200vh;
+        width: 100vw;
+        background-color: yellowgreen;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* fourth header */
+    .my {
+        height: 5%;
+        width: 100%;
+    }
+
+    .worktext {
+        background-color: whitesmoke;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbutton {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: navy;
+    }
+
+    .button-one {
+        height: 40px;
+        width: 110px;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        border-radius: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .button-one:hover {
+        background-color: #F87B1B;
+        color: white;
+    }
+
+    /* cards */
+    .cards {
+        height: 180vh;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one {
+        height: 18%;
+        width: 60%;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.237);
+        border-radius: 5px;
+    }
+
+    .cardhtml {
+        background-color: yellowgreen;
+
+
+    }
+
+    .cardcss {
+        background-color: rgb(205, 50, 50);
+    }
+
+    .cardjava {
+        background-color: rgb(50, 205, 91);
+    }
+
+    .carddesign {
+        background-color: rgb(99, 50, 205);
+    }
+
+    .cardbootstrap {
+        background-color: rgb(148, 130, 187);
+    }
+
+    /* card-img */
+    .two {
+        height: 80%;
+        width: 100%;
+
+    }
+
+    .htmlimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .cssimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .javaimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .designimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .bootstrapimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* card-text */
+    .three {
+        height: 30%;
+        width: 100%;
+        display: none;
+    }
+
+    .htmltext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .csstext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .javatext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .designtext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .bootstraptext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .view-project {
+        height: 35px;
+        width: 120px;
+        font-size: 17px;
+        border-radius: 7px;
+        border: none;
+        transition: transform 0.9s, box-shadow 0.8s;
+        margin-bottom: 0px;
+        color: rgb(0, 19, 93);
+    }
+
+    .view-project:hover {
+
+        transform: scale(1.1);
+    }
+
+    /* card-button */
+    .four {
+        height: 20%;
+        width: 100%;
+    }
+
+    .htmlbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cssbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .javabutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .designbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bootstrapbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* card-img HW */
+    .card-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* contact-------page */
+    .contact-container {
+        max-width: 950px;
+
+        margin: 50px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.153);
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        color: rgb(255, 137, 94);
+        margin-bottom: 10px;
+    }
+
+    p.subtitle {
+        text-align: center;
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .info-box {
+        background-color: rgb(249, 233, 227);
+        border-radius: 12px;
+        padding: 20px;
+        margin: 10px;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .info-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0 0.1)
+  }
+
+    .info-box h3 {
+        background-color: rgb(249, 233, 227);
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .info-box p {
+        color: #333;
+        font-size: 15px;
+    }
+
+    .contact-form h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 22px;
+        color: #2e7d32;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        font-size: 15px;
+        transition: border 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border: 1px solid #2e7d32;
+    }
+
+    .contact-form button {
+        background: #2e7d32;
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+}
+@media (min-width:600px) and (max-width:850px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .main-container {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /* first-page */
+    .first-page {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255, 0, 0);
+    }
+
+    /* header */
+    .header {
+        height: 8%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        position: none;
+    }
+
+    .home {
+        margin-left: 0%;
+        color: #F87B1B;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    header {
+        margin-left: 0%;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .My-name {
+        margin-left: 0%;
+        display: none;
+    }
+
+    /* main */
+    .main {
+        height: 100vh;
+        width: 100%;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* my-text */
+    .my-text {
+        height: 55%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hi-name {
+        font-size: 20px;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    i {
+        font-size: 30px;
+        color: #F87B1B;
+    }
+
+    h1 {
+        color: rgb(3, 39, 117);
+    }
+
+    h3 {
+        color: #F87B1B;
+    }
+
+    .developer-text {
+        font-size: 25px;
+        color: rgb(3, 39, 117);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .very-small-img {
+        height: 60px;
+        width: 300px;
+        background-color: #3dc70b00;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .ver-small-img-hw {
+        height: 80%;
+        width: 30R;
+        margin-left: 0px;
+    }
+
+    /* my-img */
+    .my-img {
+        height: 45%;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .self-img {
+        height: 70%;
+        margin-top: 70px;
+        width: 60%;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.153);
+    }
+
+    /* footer */
+    .footer {
+        height: 15%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    /* experiance box */
+    .experiance-section {
+        height: 70%;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* child */
+    .experiance {
+        height: 100%;
+        width: 33%;
+        background-color: rgb(255, 244, 240);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .project {
+        height: 100%;
+        width: 34%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .clind {
+        height: 100%;
+        width: 33%;
+        background-color: rgb(246, 219, 209);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* 3 child img */
+    .eximg {
+        height: 100%;
+        width: 30%;
+    }
+
+    .experiance-img {
+        background-color: rgb(244, 255, 222);
+    }
+
+    .project-img {
+        background-color: yellowgreen;
+    }
+
+    .clind-img {
+        background-color: yellowgreen;
+    }
+
+    /* 3 chold text */
+    .extext {
+        height: 100%;
+        width: 70%;
+    }
+
+    .experiance-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .project-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .clind-text {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .ex-img-hw {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ex-big-text {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(1, 1, 119);
+
+    }
+
+    .ex-small-text {
+        font-size: 15px;
+        color: rgb(255, 78, 14);
+        margin-left: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* second-page */
+    .second-page {
+        height: 130vh;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+ }
+
+    .second {
+        height: 18%;
+        width: 56%;
+    }
+
+    .service {
+        width: 84%;
+        height: 150px;
+        background-color: rgb(249, 233, 227);
+        text-align: center;
+        box-shadow: 10px 4px 100px 10px rgb(230, 227, 227);
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .html {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        transition: transform 0.9s, box-shadow 0.8s;
+    }
+
+    .html:hover {
+        background-color: #d29bff;
+        transform: scale(1.1);
+    }
+
+    .css {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.9s, box-shadow 0.8s;
+    }
+
+    .css:hover {
+        background-color: #ffe590;
+        transform: scale(1.1);
+    }
+
+    .javascript {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        transition: transform 0.9s, box-shadow 0.8s;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .javascript:hover {
+        background-color: #ff96b9;
+        transform: scale(1.1);
+    }
+
+    .dsign {
+        box-shadow: 1px 1px 30px 10px rgb(230, 227, 227);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.9s, box-shadow 0.8s;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+
+    .dsign:hover {
+        background-color: #9adbff;
+        transform: scale(1.1);
+    }
+
+    .second-page-small-img-hw {
+        height: 30px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .sohal {
+        height: 22%;
+        width: 22%;
+        display: flex;
+        justify-content: center;
+        border-radius: 100%;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .html-second-img {
+        background-color: #8C00FF;
+    }
+
+    .css-second-img {
+        background-color: #FFC400;
+    }
+
+    .js-second-img {
+        background-color: #FF3F7F;
+    }
+
+    .design-second-img {
+        background-color: #63C8FF;
+    }
+
+    .Second-first-font {
+        font-size: 22px;
+        margin-top: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #F87B1B;
+    }
+
+    .second-two-font {
+        font-size: 18px;
+        margin-top: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(3, 39, 117);
+    }
+
+    .right-arrow {
+        height: 55px;
+        width: 75px;
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 100px;
+        color: navy;
+        display: none;
+
+
+    }
+
+    /* third-page */
+    .third-page {
+        height: 140vh;
+        width: 100%;
+        background-color: rgb(239, 216, 204);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-page {
+        height: 40%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-me {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .About-text {
+        font-size: 23px;
+        margin-left: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .resume-button {
+        height: 45px;
+        width: 100px;
+        font-size: 18px;
+        background-color: rgb(0, 123, 255);
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+
+    /* average-page */
+    .average-box {
+        height: 60%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .average {
+        height: 2%;
+        width: 90%;
+    }
+
+    .htmlll {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .cssss {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .javascriptt {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .dsignn {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .text {
+        height: 24%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .average-text {
+        margin-right: 430PX;
+        font-size: 25px;
+    }
+
+    .average-textt {
+        margin-right: 448PX;
+        font-size: 25px;
+    }
+
+    .average-texttt {
+        margin-right: 360PX;
+        font-size: 25px;
+    }
+
+    .average-textttt {
+        margin-right: 350PX;
+        font-size: 25px;
+    }
+
+
+    /* average line */
+    .line {
+        height: 100%;
+    }
+
+    .htmll {
+        width: 80%;
+        background-color: #F87B1B;
+    }
+
+    .csss {
+        width: 70%;
+        background-color: #F87B1B;
+    }
+
+    .javaa {
+        width: 20%;
+        background-color: #F87B1B;
+    }
+
+    .designn {
+        width: 60%;
+        background-color: #F87B1B;
+    }
+
+    /* fourth page */
+    .fourth-page {
+        height: 200vh;
+        width: 100vw;
+        background-color: yellowgreen;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* fourth header */
+    .my {
+        height: 5%;
+        width: 100%;
+    }
+
+    .worktext {
+        background-color: whitesmoke;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbutton {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: navy;
+    }
+
+    .button-one {
+        height: 40px;
+        width: 110px;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+ border-radius: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .button-one:hover {
+        background-color: #F87B1B;
+        color: white;
+    }
+
+    /* cards */
+    .cards {
+        height: 180vh;
+        width: 100%;
+        background-color: rgb(249, 233, 227);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one {
+        height: 18%;
+        width: 60%;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.237);
+        border-radius: 5px;
+    }
+
+    .cardhtml {
+        background-color: yellowgreen;
+
+
+    }
+
+    .cardcss {
+        background-color: rgb(205, 50, 50);
+    }
+
+    .cardjava {
+        background-color: rgb(50, 205, 91);
+    }
+
+    .carddesign {
+        background-color: rgb(99, 50, 205);
+    }
+
+    .cardbootstrap {
+        background-color: rgb(148, 130, 187);
+    }
+
+    /* card-img */
+    .two {
+        height: 80%;
+        width: 100%;
+
+    }
+
+    .htmlimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .cssimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .javaimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .designimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .bootstrapimg {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* card-text */
+    .three {
+        height: 30%;
+        width: 100%;
+        display: none;
+    }
+
+    .htmltext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .csstext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .javatext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .designtext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .bootstraptext {
+        background-color: rgb(124, 159, 132);
+        font-size: 18px;
+        text-align: center;
+        color: navy;
+    }
+
+    .view-project {
+        height: 35px;
+        width: 120px;
+        font-size: 17px;
+        border-radius: 7px;
+        border: none;
+        transition: transform 0.9s, box-shadow 0.8s;
+        margin-bottom: 0px;
+        color: rgb(0, 19, 93);
+    }
+
+    .view-project:hover {
+
+        transform: scale(1.1);
+    }
+
+    /* card-button */
+    .four {
+        height: 20%;
+        width: 100%;
+    }
+
+    .htmlbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cssbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .javabutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .designbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bootstrapbutton {
+        background-color: rgb(226, 218, 171);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* card-img HW */
+    .card-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* contact-------page */
+    .contact-container {
+        max-width: 950px;
+
+        margin: 50px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.153);
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        color: rgb(255, 137, 94);
+        margin-bottom: 10px;
+    }
+
+    p.subtitle {
+        text-align: center;
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .info-box {
+        background-color: rgb(249, 233, 227);
+        border-radius: 12px;
+        padding: 20px;
+        margin: 10px;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .info-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-box h3 {
+        background-color: rgb(249, 233, 227);
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .info-box p {
+        color: #333;
+        font-size: 15px;
+    }
+
+    .contact-form h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 22px;
+        color: #2e7d32;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        font-size: 15px;
+        transition: border 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border: 1px solid #2e7d32;
+    }
+
+    .contact-form button {
+        background: #2e7d32;
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <!-- .Main-container -->
+    <!-- page-one -->
+    <div class="main-container">
+        <div class="first-page">
+            <!-- header -->
+            <div class="headerr" id="Home">
+                <div class="me-name">
+                    <div class="My-name">Arsalan Pathan</div>
+                </div>
+                <div class="hapc"> <a href="#Home">
+                        <header class="home">Home</header>
+                    </a>
+                    <a href="#About">
+                        <header>About</header>
+                    </a>
+                    <a href="#Project">
+                        <header>Project</header>
+                    </a>
+                    <a href="#contact">
+                        <header>Contact</header>
+                    </a>
+                </div>
+
+
+            </div>
+            <!-- main -->
+            <div class="main">
+                <!-- my-text section -->
+                <div class="my-text">
+                    <span class="hi-name">Hi'im ! <i class="animation">Arsalan Khan Pathan</i></span>
+                    <div class="hi-name"> Full Stack Developer</div>
+                    <br><br>
+                    <div class="developer-text">I have completed HTML and CSS, which <br>
+                        help in creating and designing web pages.</div>
+                    <div class="very-small-img"><img class="ver-small-img-hw"
+                            src="./assets/images/icons8-linkedin-48.png" alt=""><img class="ver-small-img-hw"
+                            src="./assets/images/icons8-email-48.png" alt=""><img class="ver-small-img-hw"
+                            src="./assets/images/icons8-github-48.png" alt=""></div>
+                    <span> <button class="resume-button">Resume </button> <a href="#contact"><button
+                                class="resume-buttonn">Contact </button></a></span><br>
+                    <div class="footer">
+                        <div class="experiance-section">
+                            <!-- experiance -->
+                            <div class="experiance">
+                                <div class=" eximg experiance-img"><img class="ex-img-hw"
+                                        src="https://media.istockphoto.com/id/1159741374/vector/creative-icon-of-a-half-brain-half-lightbulb-representing-ideas-creativity-knowledge.jpg?s=612x612&w=0&k=20&c=UggbJ9Wp1K3cGVR8x7zROTUZr9VHxe6vqU_3tgCRpCI="
+                                        alt=""></div>
+                                <div class=" extext experiance-text">
+                                    <div class="ex-big-text">5 Month</div>
+                                    <div class="ex-small-text">Experiance</div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class=" eximg project-img"><img class="ex-img-hw"
+                                        src="https://previews.123rf.com/images/copacool/copacool2004/copacool200400343/144703851-project-word-on-abstract-blue-speech-bubble-isolated-on-white-background-text-project.jpg"
+                                        alt=""></div>
+                                <div class=" extext project-text">
+                                    <div class="ex-big-text">2 Project</div>
+                                    <div class="ex-small-text">Compleated</div>
+                                </div>
+                            </div>
+                            <div class="clind">
+                                <div class=" eximg clind-img"><img class="ex-img-hw"
+                                        src="https://thumbs.dreamstime.com/b/happy-client-customer-business-icon-feedback-client-positive-sign-smile-symbol-happy-client-customer-business-icon-feedback-client-124978656.jpg"
+                                        alt=""></div>
+                                <div class=" extext clind-text">
+                                    <div class="ex-big-text">2</div>
+                                    <div class="ex-small-text">Happy Clind</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- my-img-section -->
+                <div class="my-img"><img class="self-img" src="https://cdn-icons-png.flaticon.com/512/606/606485.png"
+                        alt=""></div>
+            </div>
+            <!-- footer -->
+
+        </div>
+        <!-- Second page -->
+        <!-- service-page -->
+
+        <!-- third-page -->
+        <!-- average-page and about page-->
+        <div class="third-page" id="About">
+            <div class="about-page">
+                <div class="about-me"> <br><br>
+                    <h1>About Me</h1><br><br>
+                    <div class="About-text">I am <b style="color:  rgb(0, 174, 255)"> Arsalan Pathan </b> Full Stack
+                        Developer trainee <br> I have completed
+                        learning HTML and CSS, which are <br>the basic building blocks of web
+                        development. HTML <br> helps me create the structure of web pages and
+                        CSS <br>helps me style and design them to look attractive <br> and user-friendly.</div>
+                    <br>
+                    <div style="color: rgb(255, 255, 255)" class="About-text">Date OF Birth: <b style="color:  rgb(0, 174, 255)"> 27 / 9 /
+                            2006</b> </div>
+                    <br>
+                    <div style="color:  rgb(255, 255, 255)" class="About-text">Language : <b style="color:  rgb(0, 174, 255);"> English , Hindi
+                            , Marathi</b> </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="average-box">
+                <div class=" average text">
+                    <h1>My Experiance Area</h1>
+                </div>
+                <div class="average-text">HTML</div>
+                <div class="average htmlll">
+                    <div class="line htmll"></div>
+                </div>
+                <div class="average-textt">CSS</div>
+                <div class="average cssss">
+                    <div class="line csss"></div>
+                </div>
+                <div class="average-texttt">JAVASCRIPT</div>
+                <div class="average javascriptt">
+                    <div class="line javaa"></div>
+                </div>
+                <div class="average-textttt">WEB DESIGN </div>
+                <div class="average dsignn">
+                    <div class="line designn"></div>
+                </div>
+            </div>
+        </div>
+        <!-- card -->
+        <!-- fourth-page -->
+        <div class="fourth-page" id="Project">
+            <div class="my worktext">My Amazing Work</div>
+            <!-- . project buttons -->
+            <div class="my workbutton">
+                <a href="./project-page.html"><button class="button-one">Assigment</button></a>
+                <a href=""><button class="button-one">Live Project</button></a>
+                <button class="button-one"> Design</button>
+
+            </div>
+            <!-- cards -->
+            <div class="cards">
+                <!-- html card -->
+                <div class="one cardhtml">
+                    <div class="two htmlimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/930/non_2x/html-programming-language-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+                    <div class="three htmltext">HTML is the basic language <br> used to create webpages.</div>
+                    <div class="four htmlbutton"> <a href="./htmlfile.html"><button style="background-color: #FF7F3E;"
+                                class="view-project">View
+                                project</button></a></div>
+
+                </div>
+                <!-- css card -->
+                <div class="one cardcss">
+                    <div class="two cssimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/928/non_2x/css-programming-language-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+                    <div class="three csstext">CSS is the language used <br> to style and design webpages. </div>
+                    <div class="four cssbutton"> <a href="./cssFile.html"><button style="background-color: #80C4E9;"
+                                class="view-project">View
+                                project</button></a></div>
+
+                </div>
+                <!-- java card -->
+                <div class="one cardjava">
+                    <div class="two javaimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/937/non_2x/javascript-programming-language-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+                    <div class="three javatext">JavaScript is a powerful programming language used to make websites
+                        interactive. </div>
+                    <div class="four javabutton"><a href="./javaFile.html"> <button style="background-color: #FAEA48;"
+                                class="view-project">View
+                                project</button></a></div>
+
+                </div>
+                <!-- design card -->
+                <div class="one carddesign">
+                    <div class="two designimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/065/386/869/non_2x/figma-circle-logo-icon-figma-app-editable-transparent-background-premium-social-media-design-for-digital-download-free-png.png"
+                            alt=""></div>
+                    <div class="three designtext">Figma is a powerful, cloud-based design tool used for creating UI/UX
+                        designs, .</div>
+                    <div class="four designbutton"> <button style="background-color: #3EC70B;" class="view-project">View
+                            project</button></div>
+
+                </div>
+                <!-- boostrap -->
+                <div class="one cardbootstrap">
+                    <div class="two bootstrapimg"><img class="card-img"
+                            src="https://static.vecteezy.com/system/resources/previews/060/194/940/non_2x/bootstrap-3d-icon-transparent-background-free-png.png"
+                            alt=""></div>
+<div class="three bootstraptext">Bootstrap is a popular open-source CSS framework used to build
+                        responsive and mobile-friendly websites quickly</div>
+                    <div class="four bootstrapbutton"> <button style="background-color: #8C00FF;" class="view-project">
+                            View project</button></div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- contact page -->
+        <!--contact page-->
+        <div class="contact-container">
+            <h2 id="contact">Contact Us</h2>
+
+            <div class="info-section">
+                <a href="https://www.google.com/maps/place/Tishti+bk,+Maharashtra+441107/@21.373245,78.7517413,876m/data=!3m1!1e3!4m6!3m5!1s0x3bd4fbfc860e6709:0xb575998ca1600f7!8m2!3d21.3731437!4d78.7529342!16s%2Fg%2F1hjgr769z?entry=ttu&g_ep=EgoyMDI1MTExMC4wIKXMDSoASAFQAw%3D%3D">
+                <div class="info-box">
+                    <h3>📍 Address</h3>
+                    <p><b>Nagpur ,Maharashtra</b> </p>
+                </div>
+            </a>
+                <div class="info-box">
+                    <h3>📞 Phone</h3>
+                    <p><b>+91 9370390348</b> <br></p>
+
+                </div>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                    <div class="info-box">
+                        <h3>✉️ Email</h3>
+                        <p><b>pathansohal68@gmail.com</b></p>
+                    </div>
+                </a>
+               <a href="https://github.com/DevSohailPathan/new-portfolio"><div class="info-box">
+                    <h3>Github</h3>
+                    <p><b>View Github Profile</b></p>
+                </div>
+            </a> 
+                <a href="https://www.linkedin.com/in/sohal-pathan-3b247a395/">
+                    <div class="info-box">
+                        <h3>Linkdein</h3>
+                        <p><b>Connect on Linkedin</b></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+</html>

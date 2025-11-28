@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripty</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(194, 213, 213);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+        
+        }
+
+        .display-area {
+            height: 70%;
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+           
+        }
+
+        .sereen-box {
+            height: 400px;
+            width: 100%;
+           background-image: url(https://whitescreen.dev/images/pro/black-screen_39.png);
+           background-position: center;
+           background-size: cover;
+            font-size: 35PX;
+            color: white;
+           
+          
+        }
+
+        .mini-box-1 {
+            height: 50px;
+            width: 450px;
+            background-color: rgb(202, 203, 205);
+           
+        }
+
+        .mini-box-2 {
+            height: 50px;
+            width: 90px;
+            background-color: rgb(156, 155, 163);
+        }
+      button
+      {
+        height: 40px;
+        width: 150PX;
+        font-size: 20PX;border: none;
+        border-radius: 15PX;
+        margin-top: 20PX;
+        color: rgb(255, 255, 255);
+        font-family: cursive;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--  -->
+        <div class="section-one">
+            <div class="display-area">
+                <div class="sereen-box" id="display">
+                </div>
+                <button id="sun" style="background-color: rgb(223, 128, 34);" onclick="Sunday()"> Sunday</button>
+                <button id="mon" style="background-color: rgb(230, 126, 126);" onclick="Monday()"> Monday</button>
+                <button id="tue" style="background-color: rgb(229, 124, 167);" onclick="Tuesday()"> Tuesday</button>
+                <button id="wed" style="background-color: rgb(216, 166, 0);;" onclick="Wednasday()"> Wednesday</button>
+                <button id="thu" style="background-color: rgb(130, 116, 217);" onclick="Thursday()"> Thursday</button>
+                <button id="fri" style="background-color: rgb(8, 152, 0);" onclick="Friday()"> Friday</button>
+                <button id="sat" style="background-color: rgb(18, 0, 184);" onclick="Satarday()"> Satarday</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+<!--  -->
+<script>
+    function Sunday() {
+        let x = document.getElementById("sun").innerHTML;
+        document.getElementById("display").innerHTML = "Well Come to Universal Calendar Today is  a "  +  x     ;
+    }
+    function Monday() {
+        let x   = document.getElementById("mon").innerHTML;
+        document.getElementById("display").innerHTML ="Well Come to Universal Calendar Today is  a "  +  x     ;
+    }
+    function Tuesday() {
+        let z = document.getElementById("tue").innerHTML;
+        document.getElementById("display").innerHTML = "Well Come to Universal Calendar Today is  a "  +  z     ;
+    }
+    function Wednasday() {
+        let a = document.getElementById("wed").innerHTML;
+        document.getElementById("display").innerHTML = "Well Come to Universal Calendar Today is  a "  +  a     ;
+    }
+    function Thursday() {
+        let b = document.getElementById("thu").innerHTML;
+        document.getElementById("display").innerHTML = "Well Come to Universal Calendar Today is  a "  +  b     ;
+    }
+    function Friday() {
+        let c = document.getElementById("fri").innerHTML;
+        document.getElementById("display").innerHTML = "Well Come to Universal Calendar Today is  a "  +  c     ;
+    }
+    function Satarday() {
+        let d = document.getElementById("sat").innerHTML;
+        document.getElementById("display").innerHTML ="Well Come to Universal Calendar Today is  a "  +  d     ;
+    }
+
+
+</script>
+
+</html>

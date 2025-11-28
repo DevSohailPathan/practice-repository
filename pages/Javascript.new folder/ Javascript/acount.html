@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="total-amount"></p>
+    <p id="display-1"></p>
+    <p id="display-2"></p>
+   <button onclick="add()">Click</button>
+   
+</body>
+<script>
+    // first exercise
+    // let a = 0
+    // let n = 20
+    //  let m = 60 
+    //  function add () {
+    //     a = n-m 
+    //  }
+    //  m=60 
+    //  n=100
+    //  add()
+    //  alert(a)
+    // section exercise
+    // let a = 5 
+    // let b = 5
+    // function add (){
+    //     a= 20
+    //     b= 10
+    // }
+    // a = 30
+    // add()
+    // alert (a+b)
+    // third excercise
+    // let a = 0 
+    // let input = 0 
+    // document.getElementById("display").innerHTML =a
+    // function add() {
+    //     input = Number(prompt())
+    //     a = a + input 
+
+    //     alert (a)
+    //     document.getElementById("display").innerHTML =a
+    // }
+    // fourth exercise
+     
+    let balance = 10000
+    let withdrawAmount = 0
+    document.getElementById("totat-amount").innerHTML ="total balance is :" + balance;
+
+    function add(){
+        withdrawAmount = Number (prompt("Enter amount to Withdraw"))
+        balance = balance - withdrawAmount
+        document.getElementById("display-1").innerHTML="withdraw amount is :" + withdrawAmount;
+        document.getElementById("display-2").innerHTML="balance amount is :" + balance;
+        document.getElementById("total-amount").innerHTML= balance;
+
+    }
+ 
+</script>
+</html>
